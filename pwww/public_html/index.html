@@ -5,40 +5,46 @@
         <title>Impressionist</title>
         <meta charset="UTF-8">
        <style>
-           #head2{
-               background-color: rgb(30,30,30);
-               color:dimgray;
-               margin:0px 0px 3px 0px;
-           }
           header{
               background-color: rgb(50,50,50);
+             
           }
           #head1{
-
+               margin: 0px;
+              padding:5px;
               color: gray;
               font-family: sans-serif;
               font-weight:bold;
               text-align: left;
               
           }
-          #lp1 a{
-
-            
-              display:table-column;
-              padding: 5px;
-              margin: 10px 10px 10px 100px;
-
-              text-align:right;
-              color:gray;
-              font-family: serif , Times New Roman;
+          
+          #head2{
+               
+               padding-top: 75px;
+               padding-left: 10px;
+               background-color: rgb(30,30,30);
+               color:dimgray;
+               height:400px;
+           }
+           #head2 figure{
+               float:right;
+           }
+          
+          #lp1 li {
+              display: inline;
+              padding: 20px;
+              margin: 0px;
+              font-family:"Courier New", monospace;
               font-weight:normal;
-              font-size:25px;
-              text-decoration: none;
-
-
-              
+              font-size:20px;
+              text-decoration: none;   
           }
           
+          #lp1 a{
+              text-decoration: none;
+              color:dimgray;
+          }
           .more a{
            padding: 5px;
            color: white;
@@ -101,13 +107,13 @@
  <div class="row1">
   <header id="header" class="main">
     <div id="head1">
-        <h1 >IMPRESSIONIST</h1>
+        <h1 style="margin:0;padding: 0;" >IMPRESSIONIST</h1>
       <small >Free PSD Website Template</small>
     </div>
     
 
-
-     <ul>
+      <nav id="lp1">
+     <ul style="list-style-type: none;">
         <li><a href="#">HOME</a></li>
         <li><a href="#">STYLE DEMO</a></li>
         <li><a href="#">FULL WIDTH</a></li>
@@ -115,8 +121,7 @@
          <li><a href="#">PORTOFOLIO</a></li>
         <li><a href="#">GALLERY</a></li>
       </ul>
-
-      
+      </nav>
     
   </header>
 </div>
@@ -127,8 +132,8 @@
     <section id="head2" class="main">
      
        
-          <h1>A HUGE TITLE HERE</h1>
-          <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed....</p>
+          <h1>A HUGE <br>TITLE HERE</h1>
+          <p>Vestibulumaccumsan egestibulum eu justo <br>convallis augue estas aenean elit intesque sed....</p>
           <footer class="more"><a href="#">READ MORE &raquo;</a></footer>
       
     
