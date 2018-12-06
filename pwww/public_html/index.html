@@ -64,7 +64,7 @@
              outline-color: rgb(200,20,0);
              
           }
-          .more a{
+          .more a,#submit{
            padding: 5px;
            color: white;
            width:fit-content;
@@ -72,7 +72,7 @@
            background-color: rgb(200,20,0);
            text-decoration: none;
            border-radius: 5px;
-
+           
           }
           
           #pjesa2
@@ -103,7 +103,10 @@
               padding: 20px 10px; 
                
           }
-          
+          #pjesa4 a,h3{
+              color: rgb(200,20,0);
+              text-decoration: none; 
+          }
           .forth
           {
               margin: 5px 0px 0px 0px;
@@ -126,6 +129,9 @@
             padding: 5px;
           }
          
+          p,#pjesa4 h2{
+              color:dimgray;
+          }
          
       </style>
     </head>
@@ -257,7 +263,7 @@
           <img src="vesa.jpg" width="215" height="90" alt="">
           <p>Lorem ipsum dolor sit amet consecture adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim as ninim veniam, quis nostrud exerci 
                   tation ullamcorper suscipit lobortis nisl ut aliquip</p>
-           <footer class="more"><a href="#">Read more &raquo;</a></footer>
+           <footer class="more2"><a href="#">Read More &raquo;</a></footer>
       </section>
       
       <section class="endForth">
@@ -282,19 +288,19 @@
           <h2>Latest Blog posts</h2>
            <article>
         
-            <h2>Post Title</h2>
+            <h3>Post Title</h3>
             <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
          
           <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
-          <footer class="more"><a href="#">Read more &raquo;</a></footer>
+          <footer class="more2"><a href="#">Read More &raquo;</a></footer>
         </article>
            <article>
           
-            <h2>Post Title</h2>
+            <h3>Post Title</h3>
             <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
          
           <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
-          <footer class="more"><a href="#">Read more &raquo;</a></footer>
+          <footer class="more2"><a href="#">Read More &raquo;</a></footer>
         </article>   
       </section>
         
@@ -306,7 +312,7 @@
                    <P>  <input type="email" value="Email"> </P>
                   <P> <input type="text" value="Subject"></P>
                   <P>  <textarea rows="4" cols="21">Message</textarea></P>
-                  <p><input type="submit" value="Submit"></p>
+                  <p id="submit"><input type="submit" value="Submit"></p>
                    
                </form>    
         </article>
