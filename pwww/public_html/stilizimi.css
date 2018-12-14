@@ -29,6 +29,24 @@
            #head2 figure{
                float:right;
            }
+            .head6{
+               padding-top: 20px;
+               padding-left: 0px;
+               background-color: white;
+               color:black;
+               height:430px;
+               font-weight:normal;
+           }
+           #lp3{
+               
+               color:black;
+               font-weight:normal;
+               float:right;
+               position: absolute;
+               top: 250px;
+               left: 480px;
+              
+           }
            #lp1{
                 float:right;
                 position: absolute;
