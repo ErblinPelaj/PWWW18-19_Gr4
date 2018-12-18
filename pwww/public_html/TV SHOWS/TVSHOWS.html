@@ -112,41 +112,69 @@
               color:dimgray;
           }
           
+/*           TVSHOWS */
           
           .part2{
-              background-color: whitesmoke;
-              margin: 10px;
+               background-color: white;
               padding: 10px;
+              height:500px;
           }
           
           #fig{
               background-color: white;
               width: 40%;
               margin: 10px 300px 20px 10px;
+              border-right:  15px solid red;
               
           }
           
           
           #figcap{
-            
+/*            
                 position: absolute;
                 top: 38%;
-                left: 50%;
+                left: 50%;*/
                 padding:10px;
                 width:45%;  
-                background-color: darkseagreen;
+                background-color: #232323;
                 border-radius: 15px;
+                margin-left: 20px;
                 margin-bottom: 20px;
+                color:rgb(200,20,0);
+                border-bottom: 15px solid red;
                 
           }
          
+          .part3{
+             background-color:rgb(30,30,30);
+             padding: 10px 10px 10px 10px;
+           
+          }
+          
+          #pjese3{
+              background-color: #232323;
+              color:rgb(200,20,0);
+              width:65%;
+              border-radius: 15px;
+              border-bottom: 15px solid red;
+          }
+          
+          
+          .third{
+              margin: 0px 0px 0px 0px;
+              width:30%;
+              height: 400px;
+              text-align: center;
+              display: inline-block;
+              padding: 8px;  
+          }
       </style>
     </head>
     <body>
          <!-- / Header i faqes -->
  
      
-  <header id="header" class="main">
+         <header id="header" class="main" style="border-bottom: 8px solid red;">
     <div id="head1">
         <h1 style="margin:0;padding: 0;" >TV SHOWS</h1>
       <p style="padding:0;margin: 0;">Movies and Tv series online HD</p>
@@ -154,9 +182,9 @@
     
       <nav id="lp1">
      <ul style="list-style-type: none;">
-        <li><a href="#">TRENDING</a></li>
-        <li><a href="#">MOST POPULAR</a></li>
-        <li><a href="#">TOP RATED</a></li>
+        <li><a href="#pjesa3">TRENDING</a></li>
+        <li><a href="#pjesa3">MOST POPULAR</a></li>
+        <li><a href="#pjesa3">TOP RATED</a></li>
       </ul>
       </nav>
       
@@ -174,30 +202,54 @@
               worth watching next has never been more of a challenge. That's where our running list of the year's best television series comes in</p>
          
        </article>
-
+         </div>
+         
+         
+        
     <!-- main content -->
-    <div style="background-color:darkseagreen;border-radius:10px; ">
-      <section  >
+    <div class="part3">
+      <section>
         <!-- article 1 -->
-        <article class="forth">
+       
+        <!-- article 2 -->
+        <p  class="forth"> <img src="friends.png" width="190" height="268" alt="Friends crue"> </p>
+        <p class="forth">  <img src="seinfeld.png" width="190" height="268" alt="Seinfeld crue"></p>
+        <p class="forth">  <img src="thesopranos.png" width="190" height="268" alt="The sopranos crue"> </p>
+           
+         <article id="pjese3">
           <h2>MOST WATCHED TV SHOWS OF ALL TIME</h2>
           
           <p>The Most Popular charts use data from the search behavior of 
               IMDb's more than 250 million monthly unique visitors to rank the hottest, most buzzed about movies and TV shows.</p>
         </article>
-        <!-- article 2 -->
-        <article >
-          <figure>
-            <ul >
-              <li><a href="#"><img src="friends.png" width="190" height="268" alt="Friends crue"></a></li>
-              <li><a href="#"><img src="seinfeld.png" width="190" height="268" alt="Seinfeld crue"></a></li>
-              <li><a href="#"><img src="thesopranos.png" width="190" height="268" alt="The sopranos crue"></a></li>
-            </ul>
-          </figure>
-        </article>
       </section>
     </div>
+    
+     <div id='pjesa3'>
+              
+        <!-- article 1 -->
+        <article class='third'> 
+          <h2>TRENDING</h2>
+          <img src="vesa.jpg" alt="">
+          <p>sltumst phasellentes dolor ut a ipsum id consectetus. Inpede cumst vitae ris tellentesque fring intesquet.</p>
+          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+        </article>
+        <!-- article 2 -->
+        <article class='third' >
+          <h2>MOST POPULAR</h2>
+          <img src="vesa.jpg" alt="">
+          <p> t vitae doloreet condimentumst phasellentes dolor ut a ipsum id consectetus. Inpede cumst vitae ris tellentesque fring intesquet.</p>
+          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+        </article>
+        <!-- article 3 -->
+        <article class='third'>
+          <h2>TOP RATED</h2>
+          <img src="vesa.jpg" alt="">
+          <p>llentes dolor ut a ipsum id consectetus. Inpede cumst vitae ris tellentesque fring intesquet.</p>
+          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+        </article>  
          </div>
+        
     <!-- ########################################################################################## -->
     <!-- ########################################################################################## -->
     <!-- ########################################################################################## -->
