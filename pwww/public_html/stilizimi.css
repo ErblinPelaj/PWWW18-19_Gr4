@@ -76,7 +76,7 @@
              outline-color: rgb(200,20,0);
              
           }
-          .more a,#submit{
+          .more a{
            padding: 5px;
            color: white;
            width:fit-content;
@@ -108,9 +108,9 @@
           
           #pjesa4{
               height:500px;
-            margin: 0px 0px 0px 0px;
+            margin:5px 0px 0px 0px;
               background-color: lightgray;
-              padding: 20px 10px; 
+              padding: 5px; 
                
           }
           #pjesa4 a,h3{
@@ -120,11 +120,22 @@
           .forth
           {
               margin: 5px 0px 0px 0px;
-              width:350px;
+              width:24%;
               height: 300px;
               text-align: center;
               display: inline-block;
-              padding: 5px;
+              padding: 0px;
+                
+          }
+          
+          .forth1
+          {
+              margin: 0px;
+              width:24%;
+              height: 300px;
+              text-align: left;
+              display: inline-block;
+              padding: 0px;
                 
           }
           
@@ -132,13 +143,7 @@
               font-family: serif;
           }
           
-          .endForth{
-              text-align: left;
-            display: inline-block;  
-            width:350px;
-            padding: 5px;
-          }
-         
+          
           p,#pjesa4 h2{
               color:dimgray;
           }
