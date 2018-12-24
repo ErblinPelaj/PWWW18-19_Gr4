@@ -4,11 +4,27 @@
 
         <title>TV SHOWS</title>
         <meta charset="UTF-8">
+        <script type = "text/javascript">
+
+ var now = new Date();
+var hour = now.getHours();
+
+if ( hour < 12 )
+ document.getElementsByClassName("part2").style.backgroundImage=url("a.jpg");
+ 
+if ( hour >= 12 )
+ {
+hour = hour - 12;
+if ( hour < 6 )
+ document.getElementsByClassName("part2").style.backgroundImage=url("bacck.jpg");
+if ( hour >= 6 )
+ document.getElementsByClassName("part2").style.backgroundImage=url("round.jpg");
+ } 
+
+ 
+ </script>
        <style>
 
-
-
-          
 
           #header{
               background-color: rgb(50,50,50);
@@ -184,10 +200,7 @@
           
           
           #figcap{
-/*            
-                position: absolute;
-                top: 38%;
-                left: 50%;*/
+
                 padding:10px;
                 width:45%;  
                 background-color:#282828;
@@ -197,6 +210,7 @@
                 color:rgb(200,20,0);
                 border-bottom: 15px solid #D32F2F;
                 font-family: "Courier New", monospace;
+                box-shadow: 10px -10px 5px grey;
               
                 
           }
@@ -218,6 +232,7 @@
               border-radius: 15px;
               border-bottom: 15px solid #D32F2F;
               font-family: "Courier New", monospace;
+              box-shadow: 10px -10px 5px grey;
           }
           
           
@@ -271,6 +286,24 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
             text-align: center;
             width: 100%;
         }
+        
+       #a{
+        width:50%;
+        height:300px;
+         margin:10px;
+        }
+
+        #a img {
+         position:absolute;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+            }
+
+         #a img.top:hover {
+            opacity:0;
+            }
       </style>
     </head>
     <body>
@@ -297,9 +330,12 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
 
          <div class="part2">
     <!-- Slider -->
-   
-        <figure id="fig"><img src="best.png"  alt=""></figure>
-        
+    <div id="a">
+        <img class="bottom" src="top.jpg" alt="">
+      <img class="top" src="best.png"  alt="">
+     
+       </div>
+    
        <article id="figcap">
           <h2>BEST 2018 TV SHOWS</h2>
           <p>With so many TV shows airing in 2018, figuring out what's 
