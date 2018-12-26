@@ -103,7 +103,7 @@
             margin: 0px 0px 0px 0px;
             background-color: lightgray;
             padding: 20px 10px; 
-            border-bottom: 15px solid gray;
+            border-bottom: 1px solid gray;
           }
           
           #pjesa4{
@@ -111,6 +111,7 @@
             margin:5px 0px 0px 0px;
               background-color: lightgray;
               padding: 5px; 
+             
                
           }
           #pjesa4 a,h3{
