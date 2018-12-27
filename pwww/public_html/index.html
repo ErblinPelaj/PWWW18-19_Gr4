@@ -2,6 +2,10 @@
 <html>
     <head>
 
+ 
+ 
+ 
+ 
         <title>KinoTV</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stilizimi.css">
@@ -27,6 +31,21 @@
       </nav>
       
   </header>
+             <script type = "text/javascript">
+ var now = new Date();
+var hour = now.getHours();
+
+if ( hour < 12 )
+document.body.background = "a.jpg";
+if ( hour >= 12 )
+ {
+hour = hour - 12;
+if ( hour < 6 )
+ document.body.background = "bacck.jpg";
+if ( hour >= 6 )
+document.body.background = "c.jpg";
+ } 
+            </script>
          
    
     
@@ -127,8 +146,12 @@
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     ctx.font = "30px Arial";
-    ctx.strokeText("Celebrity news",10,50);
+    ctx.strokeText("Celebrity news",10,70);
         </script>
+         <svg height="50" width="400">
+        <ellipse cx="200" cy="20" rx="190" ry="20" style="fill:#999999;" />
+         <ellipse cx="180" cy="20" rx="170" ry="10" style="fill:white;" /> 
+        </svg>
               <p>The ultimate news source for music, celebrity, entertainment, movies, and current events on the web.
                   <br>All the latest celebrity and showbiz news.
                   <br>  celebrity breaking news from the kinoTV</p>
@@ -189,7 +212,7 @@
            
                <form method="get" action="http://www.randyconnolly.com/tests/process.php">
                    <P> <input type="text" value="Name"> </P>
-                   <P>  <input type="email" value="Email"> </P>
+                   <P>  <input type="email" value="Email" autocomplete="off"> </P>
                   <P> <input type="text" value="Subject"></P>
                   <P>  <textarea rows="4" cols="21">Message</textarea></P>
                   <p id="submit"><input type="submit" value="Submit"></p>
