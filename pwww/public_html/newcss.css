@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
-
-        <title>TV SHOWS</title>
-        <meta charset="UTF-8">
-    
-       <style>
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 28, 2018, 12:37:36 AM
+    Author     : Lenovo
+*/
 
 
           #header{
@@ -296,137 +297,3 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
             } 
             
          
-      </style>
-    </head>
-    <body>
-         <!-- / Header i faqes -->
- 
-     
-         <header id="header" class="main" style="border-bottom: 8px solid #D32F2F;">
-    <div id="head1">
-        <h1 style="margin:0;padding: 0;" >TV SHOWS</h1>
-      <p style="padding:0;margin: 0;">Movies and Tv series online HD</p>
-    </div>
-    
-      <nav id="lp1">
-     <ul style="list-style-type: none;">
-        <li><a href="#ref">TRENDING</a></li>
-        <li><a href="#ref">MOST POPULAR</a></li>
-        <li><a href="#ref">TOP RATED</a></li>
-      </ul>
-      </nav>
-      
-  </header>
-         
-   
-
-         <div class="part2">
-    
-    <div id="a">
-        <img class="bottom" src="top.jpg" alt="">
-      <img class="top" src="best.png"  alt="">
-     
-       </div>
-    
-       <article id="figcap">
-          <h2>BEST 2018 TV SHOWS</h2>
-          <p>With so many TV shows airing in 2018, figuring out what's 
-              worth watching next has never been more of a challenge. That's where our running list of the year's best television series comes in</p>
-         
-       </article>
-    
-         </div>
-         
-         <div id='back'>     
-        
-   
-    <div class="part3">
-      <section>
-      
-        <p  class="forth"> <img src="friends.png" width="190" height="268" alt="Friends crue"> </p>
-        <p class="forth">  <img src="seinfeld.png" width="190" height="268" alt="Seinfeld crue"></p>
-        <p class="forth">  <img src="thesopranos.png" width="190" height="268" alt="The sopranos crue"> </p>
-        <article class="forth">
-            
-        <table style="width:20%; margin-top: 75%; ">
-  <tr>
-    <th>Friends</th>
-    <th>Seinfeld</th> 
-    <th>The Sopranos</th>
-  </tr>
-  <tr>
-    <td>1994</td>
-    <td>1989</td>
-    <td>1999</td>
-  </tr>
-  <tr>
-    <td>2004</td>
-    <td>1998</td>
-    <td>2007</td>
-  </tr>
- 
-</table>
-            
-          </article>
-           
-         <article id="pjese3">
-          <h2>MOST WATCHED TV SHOWS OF ALL TIME</h2>
-          
-          <p>The Most Popular charts use data from the search behavior of 
-              IMDb's more than 250 million monthly unique visitors to rank the hottest, most buzzed about movies and TV shows.</p>
-        </article>
-        
-        
-      </section>
-    </div>
-    
-     <div class='part4'>
-              
-        
-        <article class='third'> 
-          <h2 id='ref'>TRENDING</h2>
-          <img src="GTH.jpg" alt="">
-          <p>Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss.
-              It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, 
-              the first of which is A Game of Thrones</p>
-          <footer class="more"><a href="#">Read More &raquo;</a></footer>
-        </article>
-
-        <article class='third' >
-          <h2 id='ref'>MOST POPULAR</h2>
-          <img src="brbad.jpg" alt="">
-          <p> Breaking Bad is an American neo-western crime drama television series created and produced by Vince Gilligan. 
-              The show originally aired on AMC for five seasons, from January 20, 2008 to September 29, 2013</p>
-          <footer class="more"><a href="#">Read More &raquo;</a></footer>
-        </article>
-        <!-- article 3 -->
-        <article class='third'>
-          <h2 id='ref'>TOP RATED</h2>
-          <img src="office.jpg" alt="">
-          <p>The Office is an American television sitcom that aired on NBC from March 24, 2005,
-              to May 16, 2013, lasting nine seasons.It is an adaptation of the original BBC series of the same name and was adapted for American television .</p>
-          <footer class="more"><a href="#">Read More &raquo;</a></footer>
-        </article>  
-         </div>
-        
-         </div>
-    <div>
-      <div class="part5">
-        <article id='pjesaFundit' >
-          <h2 style='color:#D32F2F; font-family: "Comic Sans MS",monospace;'>Contact us</h2>
-           
-               <form method="get" action="http://www.randyconnolly.com/tests/process.php">
-                   <P> <input id="form" type="text" placeholder="Name"> </P>
-                   <P>  <input id="form" type="email" placeholder="Email"> </P>
-                  <P> <input id="form"type="text" placeholder="Subject"></P>
-                  <P>  <textarea id="form"rows="4" cols="21">Message</textarea></P>
-                  <p id="submit"><input id="form" style="background-color: #D32F2F;" type="submit" value="SUBMIT"></p>
-                   
-               </form>    
-        
-      </article> 
- 
-    </div>
-    </div> 
-    </body>
-</html>
