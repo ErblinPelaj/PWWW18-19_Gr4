@@ -58,6 +58,7 @@ body{
                 top: 20px;
                 right: 10px;
                 padding:25px 10px 30px 100px;
+                font-weight: bold;
           }
 
            
@@ -68,7 +69,8 @@ body{
               font-family:"Courier New", monospace;
               font-weight:normal;
               font-size:20px;
-              text-decoration: none;  
+              text-decoration: none;
+               font-weight: bold;
           }
           
           #lp1 a{
@@ -113,8 +115,8 @@ body{
           }
           
           #pjesa4{
-              height:500px;
-            margin:5px 0px 0px 0px;
+              height:400px;
+              margin:3px 0px 0px 0px;
               background-color: lightgray;
               padding: 5px; 
              
@@ -155,5 +157,5 @@ body{
               color:dimgray;
           }
          
-      
+          
 

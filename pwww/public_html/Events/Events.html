@@ -2,13 +2,18 @@
 
 <html>
 <head>
-<title>Events</title>
+    <title>Events</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="stilizimi.css">
 <style>
+    footer p {
+              color:black;
+              font:Paletiono,serif;
+          }
+      
      .head6{ 
          color:gainsboro;
-         background: url(shiriti10.jpg); 
+         background: url(bback.jpg); 
          -webkit-background-size: cover;
          -moz-background-size: cover;
          -o-background-size: cover;
@@ -30,15 +35,14 @@ h2{
     color:gainsboro;
     padding-left: 20px;
 }
-body{
-    background-color: darkred;
-}
+
 #pjesa3,#pjesa4{
     background-color: rgb(40, 0, 0);
     margin:0px 0px 0px 0px;
     border-bottom: 3px;
     border-bottom-style:inset ;
-    border-bottom-color: darkred;
+    background-image: radial-gradient(closest-corner, darkgray 5%, gray 80%, lightgray 95%);
+    
     
 }
 
@@ -60,6 +64,11 @@ h1 {
               padding: 0px;
               margin: 0px;
           }
+          .forth table tr th { background-color: darkkhaki;}
+          .forth table td {
+              color:lightyellow;
+              font-weight:300;
+                       }
 </style>
 </head>
 <body>
@@ -67,7 +76,7 @@ h1 {
   <header id="header" style="border-bottom: 3px inset darkred;" >
     <div id="head1">
       <h1 style="margin:0;padding: 0;">EVENTS</h1>
-      <h4 style="padding:0;margin: 0;">Catch the latest nominations and winners</h4>
+      <h4 style="padding:0;margin: 0;font-style: italic;">Catch the latest nominations and winners</h4>
     </div>
       <nav id="lp1">
                 <ul style="list-style-type: none;" >
@@ -83,13 +92,13 @@ h1 {
         <div id="papasi">
             <figure><img src="SB1.jpg" alt="There is a photo here" width="450" height="280" >
         <figcaption >
-          <h5 style="font-size: 150%; margin: 3px;padding-bottom:0px;">The 76th Golden Globe Awards nominations are finally here. </h5>
+            <h5 style="font-size: 150%; margin: 3px;padding-bottom:0px;"><i>The 76th Golden Globe Awards nominations are finally here.</i> </h5>
           <p> The 76th Golden Globe Awards will be held on Jan. 6, 2019, at the Beverly Hilton Hotel in Los Angeles. Andy Samberg and Sandra Oh will host the ceremony.“A Star Is Born,” “Vice” and “The Favourite” were among the leading film nominees for the Golden Globes. These are the main storylines going into the awards show...</p>
           <footer class="more"><a href="#">Read More &raquo;</a></footer>
         </figcaption>
       </figure>
      <nav id="lp3" >
-         <h2>OTHER IMPORTANT NEWS.</h2>
+         <h2><i>OTHER IMPORTANT NEWS.</i></h2>
         <ul style="list-style-type:disc;">
            
            <li><a href="#">71st Annual Primetime Emmy Awards Date Announced.The 2019 Emmy Awards are scheduled for Sunday, Sept. 22, 2019, Fox and the Television Academy announced Monday.</a></li>
@@ -137,7 +146,7 @@ h1 {
            
           <figure><img src="Ti.jpg" width="250" height="180" alt="">
             <figcaption>
-              <h2>Titanic</h2>
+                <h2>Titanic</h2>
               <p>Titanic is a 1997 American epic romantic disaster movie.It received positive critical reviews. The movie won 11 Academy Awards, and was nominated for fourteen other Academy Awards...</p>
               <footer class="more"><a href="#">Read More &raquo;</a></footer>
             </figcaption>
@@ -146,8 +155,8 @@ h1 {
         <article class="forth">
           <figure><img src="BH.jpg" width="250" height="180" alt="">
             <figcaption>
-              <h2>Ben-Hur</h2>
-              <p>Ben-Hur is a 1959 American epic religious drama film.It premiered at Loew's State Theatre in New York City on November 18, 1959.It won a record 11 Academy Awards.Ben-Hur also won three Golden Globe Awards...</p>
+                <h2>Ben-Hur</h2>
+              <p>Ben-Hur is a 1959 American epic religious drama film.It premiered at <abbr title="Loew's State Theatre">LST</abbr> in New York City on November 18, 1959.It won a record 11 Academy Awards.Ben-Hur also won three Golden Globe Awards...</p>
               <footer class="more"><a href="#">Read More &raquo;</a></footer>
             </figcaption>
           </figure>
@@ -155,10 +164,10 @@ h1 {
           <article class="forth">
               <table border="1" cellspacing="2">
                   <tr>
-                      <th style="background-color:red;">Actor/Oscar</th>
-                      <th style="background-color:red;">Actress/Oscar</th>
-                      <th style="background-color:red;">Movie/Oscar</th>
-                      <th style="background-color:red;">TV Show/Emmy</th>
+                      <th>Actor/Oscar</th>
+                      <th>Actress/Oscar</th>
+                      <th>Movie/Oscar</th>
+                      <th>TV Show/Emmy</th>
                   </tr>
                   <tr>
                       <td><ol type="1">
@@ -170,7 +179,12 @@ h1 {
                       <td><ol type="A">
                               <li>Katherine Hepburn/4</li>
                               <li>Meryl Streep/3</li>
-                              <li>Cate Blanchett/2</li>
+                              <li>Cate Blanchett/2
+                                  <ul>
+                                      <li>2005</li>
+                                      <li>2014</li>
+                                  </ul>
+                              </li>
                               
                               
                           </ol></td>
@@ -251,15 +265,14 @@ h1 {
                   <P>  <textarea rows="4" cols="21">Message</textarea></P>
                   <p id="submit"><input type="submit" value="Submit"></p>
                    
-               </form>    
-        
+               </form>      
       </article> 
     </section>
         <div>
 <!-- Footer -->
   <footer id="footer" class="clear">
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+      <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#"><mark>Domain Name</mark></a></p>
+      <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates"><mark>OS Templates</mark></a></p>
   </footer>
         </div>
     
