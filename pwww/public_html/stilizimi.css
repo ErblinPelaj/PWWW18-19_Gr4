@@ -58,6 +58,7 @@ body{
                 top: 20px;
                 right: 10px;
                 padding:25px 10px 30px 100px;
+                font-weight: bold;
           }
 
            
@@ -68,7 +69,8 @@ body{
               font-family:"Courier New", monospace;
               font-weight:normal;
               font-size:20px;
-              text-decoration: none;  
+              text-decoration: none;
+               font-weight: bold;
           }
           
           #lp1 a{
