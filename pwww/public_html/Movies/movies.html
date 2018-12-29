@@ -5,15 +5,18 @@
         <title>MOVIES</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <style>
 
+          body{
+            background-image: gray-gradient.jpg;
+          }
           #header{
               background-color: rgb(50,50,50);
               border-bottom: thin solid black;
               height:120px;
-              
-             
+
+
           }
           #head1{
               margin: 0px;
@@ -23,17 +26,17 @@
               font-family: "Times New Roman",Times,serif;
               font-weight:normal;
               text-align: left;
-              width:350px;                                              
+              width:350px;
           }
           #lp1{
-                float:right;    
+                float:right;
                 position: absolute;
                 top: 20px;
                 right: 10px;
                 padding:25px 10px 30px 100px;
           }
 
-           
+
           #lp1 li {
               display: inline;
               padding: 20px;
@@ -41,28 +44,28 @@
               font-family:"Courier New", monospace;
               font-weight:normal;
               font-size:20px;
-              text-decoration: none;  
+              text-decoration: none;
           }
-          
+
           #lp1 a{
               text-decoration: none;
               color:dimgray;
           }
-          
+
           #lp1 li:hover{
              background-color: rgb(200,20,0);
              outline-color: rgb(200,20,0);
-             
-             
+
+
           }
           #part1
-          {     
+          {
               height: 500px;
               margin: 0px 0px 0px 0px;
-              background-color: lightgrey;
+              background-image: linear-gradient(to bottom right, rgb(200,200,200), rgb(100,100,100));
               padding: 10px 5px;
               border-bottom: 1px solid gray;
-              
+
           }
           .more a,#submit{
            padding: 5px;
@@ -72,7 +75,7 @@
            background-color: rgb(200,20,0);
            text-decoration: none;
            border-radius: 5px;
-           
+
           }
           .forth
           {
@@ -82,190 +85,197 @@
               text-align: center;
               display: inline-block;
               padding: 5px;
-                
+
           }
           #footer{
               padding:5px;
           }
-          
+
           .endForth{
             text-align: left;
-            display: inline-block;  
+            display: inline-block;
             width:350px;
             padding: 5px;
           }
-          
+
           #part2
-          {     
+          {
               height: 500px;
               margin: 0px 0px 0px 0px;
               background-color: lightgrey;
               padding: 10px 5px;
               border-bottom: 15px solid gray;
           }
-          
+
           #pjesa4{
               height:500px;
               margin: 0px 0px 0px 0px;
               background-color: lightgray;
-              padding: 20px 10px; 
-               
+              padding: 20px 10px;
+
           }
-          
+
+          #figcap{
+
+                padding:10px;
+                width:45%;
+                position: absolute;
+                top: 65%;
+                left: 5%;
+                background-color:#282828;
+                border-radius: 15px;
+                color:rgb(200,20,0);
+                border-bottom: 15px solid #D32F2F;
+                font-family: "Courier New", monospace;
+
+
+          }
+
           p,#pjesa4 h2{
               color:dimgray;
           }
-          
+
           #pjesa4 a,h3{
               color: rgb(200,20,0);
-              text-decoration: none; 
+              text-decoration: none;
           }
-          
-          #film{
-              
+
+          .mainpart{
+              width: 100%;
+              height: 500px;
+              background-image: url("a.jpg");
+          }
+          #movie{
+            position: absolute;
+            top: 23%;
+            left: 5%;
+            border-radius: 5%;
           }
         </style>
     </head>
-    
+
     <body>
-        
+
         <!-- / Header i faqes -->
-        <header id="header">
+        <header id="header" style="border-bottom: 8px solid #D32F2F;">
             <div id="head1">
                 <h1 style="margin:0;padding: 0;" >MOVIES</h1>
+                <p style="padding:0;margin: 0;">Movies and Tv series online HD</p>
             </div>
-        
+
             <div id="lp1">
                 <ul style="list-style-type: none;">
                     <li><a href="#top">Top Rated Movies</a></li>
-                    <li><a href="#now">In Theaters Now</a></li>
                     <li><a href="#soon">Coming Soon</a></li>
                     <li><a href="#osc">Oscar Winners</a></li>
                 </ul>
             </div>
         </header>
-        
-        <section id="part1">
+
+        <div class="mainpart">
+
+          <article id="figcap">
+             <h2>MOST WANTED 2018 MOVIES</h2>
+             <p>Presenting our list of the most viewed 2018 movies</p>
+
+          </article>
+            <img id="movie" src="movies.png" >
+
+        </div>
+
+        <div id="part1" >
             <a name="top"><h1>Top Rated Movies</h1></a>
             <article class="forth">
-                <h3>Movie Title Here</h3>
+                <h2>Shawshank Redemption</h2>
                 <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
+                    <img src="sh.jpg" width="200" height="300" alt="there's no photo">
+                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            
+
             <article class="forth">
-                <h3>Movie Title Here</h3>
+                <h2>The Godfather</h2>
                 <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
+                    <img src="g.jpg" width="200" height="300" alt="there's no photo">
+                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            
+
             <article class="forth">
-                <h3>Movie Title Here</h3>
+                <h2>The Dark Knight</h2>
                 <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
+                    <img src="d.jpg" width="200" height="300" alt="there's no photo">
+                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            
-        </section>
-        
-        <section id="part1">
-            <a name="now"><h1>In Theaters Now</h1></a>
-            <article class="forth">
-                <h3>Movie Title Here</h3>
-                <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
-                </figure>
-            </article>
-            
-            <article class="forth">
-                <h3>Movie Title Here</h3>
-                <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
-                </figure>
-            </article>
-            
-            <article class="forth">
-                <h3>Movie Title Here</h3>
-                <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
-                </figure>
-            </article>
-            
-        </section>
-        
-        <section id="part1">
+
+        </div>
+
+      <div id="part1">
             <a name="soon"><h1>Coming soon</h1></a>
             <article class="forth">
-                <h3>Movie Title Here</h3>
+                <h2>Avengers: End Game</h2>
                 <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
+                    <img src="av.jpg" width="200" height="300" alt="there's no photo">
+                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            
+
             <article class="forth">
-                <h3>Movie Title Here</h3>
+                <h2>Godzilla 2</h2>
                 <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
+                    <img src="go.jpg" width="200" height="300" alt="there's no photo">
+                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            
+
             <article class="forth">
-                <h3>Movie Title Here</h3>
+                <h2>Glass</h2>
                 <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
+                    <img src="gl.jpg" width="200" height="300" alt="there's no photo">
+                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            
-        </section>
-        
-        <section id="part2">
+
+        </div>
+
+        <div id="part1">
             <a name="osc"><h1>Oscar Winners</h1></a>
             <article class="forth">
-                <h3>Movie Title Here</h3>
+                <h2>Darkest Hour</h2>
                 <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
+                    <img src="dh.jpg" width="200" height="300" alt="there's no photo">
+                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            
+
             <article class="forth">
-                <h3>Movie Title Here</h3>
+                <h2>La La Land</h2>
                 <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
+                    <img src="la.jpg" width="200" height="300" alt="there's no photo">
+                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            
+
             <article class="forth">
-                <h3>Movie Title Here</h3>
+                <h2>Dunkirk</h2>
                 <figure>
-                    <img src="vesa.jpg" width="225" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
+                    <img src="du.jpg" width="200" height="300" alt="there's no photo">
+                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            
-        </section>
-        
-        <section id="pjesa4">     
+
+        </div>
+
+        <div id="pjesa4">
       <section class="endForth" >
           <h2>About us</h2>
           <img src="vesa.jpg" width="215" height="90" alt="">
-          <p>Lorem ipsum dolor sit amet consecture adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim as ninim veniam, quis nostrud exerci 
+          <p>Lorem ipsum dolor sit amet consecture adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim as ninim veniam, quis nostrud exerci
                   tation ullamcorper suscipit lobortis nisl ut aliquip</p>
            <footer class="more2"><a href="#">Read More &raquo;</a></footer>
       </section>
-      
+
       <section class="endForth">
           <h2>Quick links</h2>
           <nav>
@@ -283,27 +293,27 @@
           </ul>
         </nav>
       </section>
-      
+
       <section class="endForth">
           <h2>Latest Blog posts</h2>
            <article>
-        
+
             <h3>Post Title</h3>
             <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
-         
+
           <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
           <footer class="more2"><a href="#">Read More &raquo;</a></footer>
         </article>
            <article>
-          
+
             <h3>Post Title</h3>
             <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
-         
+
           <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
           <footer class="more2"><a href="#">Read More &raquo;</a></footer>
-        </article>   
+        </article>
       </section>
-        
+
                       <section class="endForth">
           <h2>Categories</h2>
            <article>
@@ -322,21 +332,25 @@
 <input type="submit">
 
 
-</form>           
+</form>
+<h2>Contact Us</h2>
+<form action="http://www.randyconnolly.com/tests/process.php" method="get">
+  <input ondragover=""
+<a href="mailto:someone@example.com">Send email</a>
         </article>
-              
-      </section> 
-    
-         
+
+      </section>
+
+
   <!-- Footer -->
         <div>
   <footer >
     <p>Copyright &copy; 2018 Domain Name -All Rights Reserved</p>
     <p >Template by OS Templates</p>
   </footer>
-</div>  
-      </section>       
-        
-    </body> 
-    
+</div>
+      </section>
+
+    </body>
+
 </html>
