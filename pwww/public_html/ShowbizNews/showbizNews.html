@@ -56,7 +56,7 @@
           {
               height: 500px;
               margin: 0px 0px 0px 0px;
-              background-color: lightgrey;
+              background-image: linear-gradient(to bottom right, rgb(200,200,200), rgb(100,100,100));
               padding: 10px 5px;
               border-bottom: 1px solid gray;
 
@@ -106,6 +106,7 @@
               margin: 0px 0px 0px 0px;
               background-color: lightgray;
               padding: 20px 10px;
+              border-top: 8px solid #D32F2F;
 
           }
 
@@ -127,16 +128,38 @@
                  padding: 5px;
             }
 
+            .mainpart{
+                width: 100%;
+                height: 500px;
+                background-image: url("a.jpg");
+            }
+
             figcaption{
                 display: run-in;
             }
+
+            #figcap{
+
+                  padding:10px;
+                  width:45%;
+                  position: absolute;
+                  top: 65%;
+                  left: 5%;
+                  background-color:#282828;
+                  border-radius: 15px;
+                  color:rgb(200,20,0);
+                  border-bottom: 15px solid #D32F2F;
+                  font-family: "Courier New", monospace;
+              }
+
         </style>
     </head>
     <body>
         <!-- / Header i faqes -->
-        <header id="header">
+        <header id="header" style="border-bottom: 8px solid #D32F2F;">
             <div id="head1">
                 <h1 style="margin:0;padding: 0;" >SHOWBIZ & NEWS</h1>
+                <p style="padding:0;margin: 0;">Movies and Tv series online HD</p>
             </div>
 
             <div id="lp1">
@@ -148,42 +171,52 @@
             </div>
         </header>
 
+        <div class="mainpart">
+
+          <article id="figcap">
+             <h2>Latest News In Film Industry</h2>
+             <p>Catch the latest news about your favorite movies or actors!</p>
+
+          </article>
+
+        </div>
+
         <section id="part1">
             <a name="mn"><h1>Movie News</h1></a>
             <article class="news" >
-                <h3>Title Here</h3>
+                <h3>‘Aquaman,’ ‘Mary Poppins Returns’ Power Year-End North American Box Office</h3>
                 <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo" align="left">
+                    <img src="aq.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
-                <p align="left" style="padding-left: 240px;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<a href="#" >...read more</a> </p>
+                <p align="left" style="padding-left: 240px;" >Powerful holdovers “Aquaman” and “Mary Poppins Returns” are leading the
+                   way as the 2018 domestic box office finishes the year on a record-setting note.
+                  “Aquaman” will repeat as the winner of the final weekend of the year with about
+                  $52 million at 4,125 North American sites, according to Saturday estimates. That’s
+                 a smallish decline of only 24% from its opening. The Warner Bros. tentpole, starring
+                 Jason Momoa, will finish the frame with about $189 million in its first 10 days<a href="#" >...read more</a> </p>
             </article>
 
             <article class="news" >
-                <h3>Title Here</h3>
+                <h3>‘Bird Box’ Viewed by 45 Million Netflix Members in First Week, Company Says</h3>
                 <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo" align="left">
+                    <img src="bb.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
-                <p align="left" style="padding-left: 240px;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<a href="#" >...read more</a> </p>
+                <p align="left" style="padding-left: 240px;" >Netflix’s frightening thriller “Bird Box” scored the biggest seven-day viewership of all the streamer’s
+                  original movie releases to date — with just over 45 million member accounts having watched the moviein the first week, the company claimed Friday.
+                  The movie bowed Dec. 21 worldwide on Netflix, and became an instant — if traumatizing — Christmas Day family-viewing experience for some.
+                  The Sandra Bullock-starrer also has spawned a raft of <a href="#" >...read more</a> </p>
             </article>
 
             <article class="news" >
-                <h3>Title Here</h3>
+                <h3>‘Black Mirror: Bandersnatch’ Stumps Critics: ‘Trippy Mindf–‘ or ‘Numbing and Repetitive’?</h3>
                 <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo" align="left">
+                    <img src="bm.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
-                <p align="left" style="padding-left: 240px;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<a href="#" >...read more</a> </p>
+                <p align="left" style="padding-left: 240px;" >Netflix dropped the standalone “Black Mirror” movie “Bandersnatch” on Friday,
+                  introducing its subscribers to the first of what it hopes to be many interactive,
+                  Choose Your Own Adventure-style streaming experiences, and critics can’t seem to
+                  agree on the show or what it signals for the future of the format.The highly self-referential
+                  episode follows a video game developer (“Dunkirk” star Fionn Whitehead) who,in the process of working <a href="#" >...read more</a> </p>
             </article>
 
 
@@ -192,81 +225,43 @@
         <section id="part1">
             <a name="clb"><h1>Celebrity News</h1></a>
             <article class="news" >
-                <h3>Title Here</h3>
+                <h3>Carrie Fisher’s brother says Leia’s role in Star Wars: Episode IX will “look like it was meant to be”</h3>
                 <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo" align="left">
+                    <img src="cf.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
-                <p align="left" style="padding-left: 240px;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<a href="#" >...read more</a> </p>
-                <h4 style="text-align: left; padding-left: 60px; color: rgb(200,20,0);">Actor Name Here</h4>
+                <p align="left" style="padding-left: 240px;" >Earlier this year it was announced that the late Carrie Fisher will make a posthumous
+                  appearance as General Leia Organa in J.J. Abrams’ Star Wars: Episode IX, with her role set to be constructed through unused
+                  footage from Star Wars: The Force Awakens and Star Wars: The Last Jedi. Just how effective this footage will be at delivering
+                  a fitting end to Leia’s story remains to be seen, but according to Fisher’s brother Todd Fi<a href="#" >...read more</a> </p>
+                <h4 style="text-align: left; padding-left: 60px; color: rgb(200,20,0);">Carrie Fisher</h4>
             </article>
 
             <article class="news" >
-                <h3>Title Here</h3>
+                <h3>Dame June Whitfield Dies: Actress In ‘Absolutely Fabulous’ Was 93</h3>
                 <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo" align="left">
+                    <img src="jw.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
-                <p align="left" style="padding-left: 240px;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<a href="#" >...read more</a> </p>
-                <h4 style="text-align: left; padding-left: 60px; color: rgb(200,20,0);">Actor Name Here</h4>
+                <p align="left" style="padding-left: 240px;" >Made an OBE in 1985 and given a damehood in 2017 for services to drama and entertainment,
+                  Whitfield had a long and varied show business career, including starring in 12 BBC Radio 4 Agatha Christie adaptations as Miss Marple
+                  from 1993 to 2001. She was best known for her roles in Take It From Here, Terry And June and Absolutely Fabulous. She also appeared
+                  in Doctor Who in 2009 for David Tennant’s final episode,<a href="#" >...read more</a> </p>
+                <h4 style="text-align: left; padding-left: 60px; color: rgb(200,20,0);">Dame June Whitfield</h4>
             </article>
 
             <article class="news" >
-                <h3>Title Here</h3>
+                <h3>Lady Gaga Kicks Off a Very Good Romance With Vegas</h3>
                 <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo" align="left">
+                    <img src="lg.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
-                <p align="left" style="padding-left: 240px;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia<a href="#" >...read more</a> </p>
-                <h4 style="text-align: left; padding-left: 60px; color: rgb(200,20,0);">Actor Name Here</h4>
+                <p align="left" style="padding-left: 240px;" >Some Oscar campaigns are way better than others. Mind you, it’s probably just the luck of the clock that
+                  “Lady Gaga Enigma,” the highly spectacular, long-in-the-works show that opened Friday night in Las Vegas, happens to be kicking off in the heart awards season. Gaga did blurt
+                  out toward the close of opening night that she hopes to extend her residency at the Park Theater from the currently scheduled 11 months to two to three <a href="#" >...read more</a> </p>
+                <h4 style="text-align: left; padding-left: 60px; color: rgb(200,20,0);">Lady Gaga</h4>
             </article>
 
         </section>
 
-         <section id="part2">
-            <a name="upc"><h1>Upcoming Movies</h1></a>
-            <article class="forth">
-                <h3>Movie Title Here</h3>
-                <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
-                </figure>
-            </article>
 
-            <article class="forth">
-                <h3>Movie Title Here</h3>
-                <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
-                </figure>
-            </article>
-
-            <article class="forth">
-                <h3>Movie Title Here</h3>
-                <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
-                </figure>
-            </article>
-
-            <article class="forth">
-                <h3>Movie Title Here</h3>
-                <figure>
-                    <img src="vesa.jpg" width="180" height="250" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#">WATCH NOW &raquo;</a></footer>
-                </figure>
-            </article>
-
-        </section>
 
         <section id="pjesa4">
       <section class="endForth" >

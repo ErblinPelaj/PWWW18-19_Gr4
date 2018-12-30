@@ -1,7 +1,0 @@
-1. font-style: underline
-2. 2 tabela
-3. mail-to
-4. 2 forms
-5. Perdorimi i elementit canvas
-6. drag and drop
-7. pika 17
