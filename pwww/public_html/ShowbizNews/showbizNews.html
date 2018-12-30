@@ -61,6 +61,10 @@
               border-bottom: 1px solid gray;
 
           }
+          #newsTable{
+            table-layout: auto;
+            padding: 30px 70px;
+          }
           .more a,#submit{
            padding: 5px;
            color: white;
@@ -120,7 +124,7 @@
           }
 
             .news{
-                 margin: 5px 0px 0px 0px;
+                 margin: 0px 0px 0px 0px;
                  width: 450px;
                  height: 300px;
                  text-align: center;
@@ -132,10 +136,6 @@
                 width: 100%;
                 height: 500px;
                 background-image: url("a.jpg");
-            }
-
-            figcaption{
-                display: run-in;
             }
 
             #figcap{
@@ -166,7 +166,6 @@
                 <ul style="list-style-type: none;">
                     <li><a href="#mn">Movie News</a></li>
                     <li><a href="#clb">Celebrity News</a></li>
-                    <li><a href="#upc">Upcoming Movies</a></li>
                 </ul>
             </div>
         </header>
@@ -184,7 +183,7 @@
         <section id="part1">
             <a name="mn"><h1>Movie News</h1></a>
             <article class="news" >
-                <h3>‘Aquaman,’ ‘Mary Poppins Returns’ Power Year-End North American Box Office</h3>
+                <h3  style="color: black;">‘Aquaman,’ ‘Mary Poppins Returns’ Power Year-End North American Box Office</h3>
                 <figure>
                     <img src="aq.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
@@ -197,7 +196,7 @@
             </article>
 
             <article class="news" >
-                <h3>‘Bird Box’ Viewed by 45 Million Netflix Members in First Week, Company Says</h3>
+                <h3  style="color: black;">‘Bird Box’ Viewed by 45 Million Netflix Members in First Week, Company Says</h3>
                 <figure>
                     <img src="bb.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
@@ -207,16 +206,65 @@
                   The Sandra Bullock-starrer also has spawned a raft of <a href="#" >...read more</a> </p>
             </article>
 
-            <article class="news" >
-                <h3>‘Black Mirror: Bandersnatch’ Stumps Critics: ‘Trippy Mindf–‘ or ‘Numbing and Repetitive’?</h3>
-                <figure>
-                    <img src="bm.jpg" width="180" height="250" alt="there's no photo" align="left">
-                </figure>
-                <p align="left" style="padding-left: 240px;" >Netflix dropped the standalone “Black Mirror” movie “Bandersnatch” on Friday,
-                  introducing its subscribers to the first of what it hopes to be many interactive,
-                  Choose Your Own Adventure-style streaming experiences, and critics can’t seem to
-                  agree on the show or what it signals for the future of the format.The highly self-referential
-                  episode follows a video game developer (“Dunkirk” star Fionn Whitehead) who,in the process of working <a href="#" >...read more</a> </p>
+            <article class="news" id="newsTable">
+                <table border="1" style="border-color: rgb(50,50,50)">
+                  <caption><h3 style="color: black;">This week's top 10 grossing movies</h3></caption>
+                  <tr>
+                    <th>No.</th>
+                    <th>Movie</th>
+                    <th>Fitimet</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Aquaman</td>
+                    <td>$137M</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Mary Popins Returns</td>
+                    <td>$62M</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Bumblebee</td>
+                    <td>$46M</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Spider-Man: Into The Spider-Verse</td>
+                    <td>$37M</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>The Mule</td>
+                    <td>$23M</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Dr. Seuss' The Grinch (2018)</td>
+                    <td>$16M</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Second Act</td>
+                    <td>$14M</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Holmes and Watson</td>
+                    <td>$12M</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Ralph Breaks the Internet</td>
+                    <td>$11M</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Vice</td>
+                    <td>$9M</td>
+                  </tr>
+                </table>
             </article>
 
 
@@ -225,7 +273,7 @@
         <section id="part1">
             <a name="clb"><h1>Celebrity News</h1></a>
             <article class="news" >
-                <h3>Carrie Fisher’s brother says Leia’s role in Star Wars: Episode IX will “look like it was meant to be”</h3>
+                <h3 style="color: black;">Carrie Fisher’s brother says Leia’s role in Star Wars: Episode IX will “look like it was meant to be”</h3>
                 <figure>
                     <img src="cf.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
@@ -233,31 +281,80 @@
                   appearance as General Leia Organa in J.J. Abrams’ Star Wars: Episode IX, with her role set to be constructed through unused
                   footage from Star Wars: The Force Awakens and Star Wars: The Last Jedi. Just how effective this footage will be at delivering
                   a fitting end to Leia’s story remains to be seen, but according to Fisher’s brother Todd Fi<a href="#" >...read more</a> </p>
-                <h4 style="text-align: left; padding-left: 60px; color: rgb(200,20,0);">Carrie Fisher</h4>
             </article>
 
             <article class="news" >
-                <h3>Dame June Whitfield Dies: Actress In ‘Absolutely Fabulous’ Was 93</h3>
-                <figure>
-                    <img src="jw.jpg" width="180" height="250" alt="there's no photo" align="left">
-                </figure>
-                <p align="left" style="padding-left: 240px;" >Made an OBE in 1985 and given a damehood in 2017 for services to drama and entertainment,
-                  Whitfield had a long and varied show business career, including starring in 12 BBC Radio 4 Agatha Christie adaptations as Miss Marple
-                  from 1993 to 2001. She was best known for her roles in Take It From Here, Terry And June and Absolutely Fabulous. She also appeared
-                  in Doctor Who in 2009 for David Tennant’s final episode,<a href="#" >...read more</a> </p>
-                <h4 style="text-align: left; padding-left: 60px; color: rgb(200,20,0);">Dame June Whitfield</h4>
-            </article>
-
-            <article class="news" >
-                <h3>Lady Gaga Kicks Off a Very Good Romance With Vegas</h3>
+                <h3 style="color: black;">Lady Gaga Kicks Off a Very Good Romance With Vegas</h3>
                 <figure>
                     <img src="lg.jpg" width="180" height="250" alt="there's no photo" align="left">
                 </figure>
-                <p align="left" style="padding-left: 240px;" >Some Oscar campaigns are way better than others. Mind you, it’s probably just the luck of the clock that
-                  “Lady Gaga Enigma,” the highly spectacular, long-in-the-works show that opened Friday night in Las Vegas, happens to be kicking off in the heart awards season. Gaga did blurt
-                  out toward the close of opening night that she hopes to extend her residency at the Park Theater from the currently scheduled 11 months to two to three <a href="#" >...read more</a> </p>
-                <h4 style="text-align: left; padding-left: 60px; color: rgb(200,20,0);">Lady Gaga</h4>
+                <p align="left" style="padding-left: 240px;" >Some Oscar campaigns are way better than others. Mind you, it’s probably just the luck of
+                  the clock that “Lady Gaga Enigma,” the highly spectacular, long-in-the-works show that opened Friday night in Las Vegas,
+                  happens to be kicking off in the heart awards season. Gaga did blurt out toward the close of opening night that she hopes
+                  to extend her residency at the Park Theater from the currently scheduled 11 months to two to three <a href="#" >...read more</a> </p>
             </article>
+
+            <article class="news" id="newsTable">
+                <table border="1" style="border-color: rgb(50,50,50)">
+                  <caption><h3 style="color: black;">This years 10 highest-paid actors</h3></caption>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Actor</th>
+                    <th>Fitimet</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>George Clooney</td>
+                    <td>$239M</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Dwayne "The Rock" Johnson</td>
+                    <td>$124M</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Robert Downey Jr.</td>
+                    <td>$81M</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Chris Hemsworth</td>
+                    <td>$64M</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Jackie Chan</td>
+                    <td>$44M</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Will Smith</td>
+                    <td>$42M</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Scarlet Johansson</td>
+                    <td>$41M</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Akshay Kumar</td>
+                    <td>$40M</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Adam Sandler</td>
+                    <td>$39M</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Angelina Jolie</td>
+                    <td>$28M</td>
+                  </tr>
+                </table>
+            </article>
+
 
         </section>
 
