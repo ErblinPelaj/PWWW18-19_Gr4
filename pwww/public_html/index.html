@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-
- 
- 
- 
- 
+     
         <title>KinoTV</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="stilizimi.css">
+      <script src="javaScript.js"></script>
     </head>
     <body>
+       
          <!-- / Header i faqes -->
- 
-     
+         <script>      
+        var now = new Date();
+        var hour = now.getHours();
+
+        if ( hour < 12 )
+        document.body.background = "b.jpg";
+        if ( hour >= 12 )
+        {
+        hour = hour - 12;
+        if ( hour < 6 )
+        document.body.background = "bacck.jpg";
+        if ( hour >= 6 )
+        document.body.background = "c.jpg";
+        }      
+          </script>
   <header id="header" class="main">
     <div id="head1">
-        <h1 style="margin:0;padding: 0;" >KinoTV</h1>
+        <h1 style="margin:0;padding: 0; font-weight: bold;" >KinoTV</h1>
       <p style="padding:0;margin: 0;">Movies & TV series online HD</p>
     </div>
     
@@ -31,21 +42,7 @@
       </nav>
       
   </header>
-             <script type = "text/javascript">
- var now = new Date();
-var hour = now.getHours();
-
-if ( hour < 12 )
-document.body.background = "b.jpg";
-if ( hour >= 12 )
- {
-hour = hour - 12;
-if ( hour < 6 )
- document.body.background = "bacck.jpg";
-if ( hour >= 6 )
-document.body.background = "c.jpg";
- } 
-            </script>
+            
          
    
     

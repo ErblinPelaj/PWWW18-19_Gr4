@@ -4,7 +4,8 @@
 
         <title>TV SHOWS</title>
         <meta charset="UTF-8">
-    
+        <script src="Index/javaScript.js"></script>
+        
        <style>
            body{
                margin:0px;
@@ -297,6 +298,15 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
                 margin: 0px ;
             } 
             
+            #button{
+                padding: 10px;
+           color: white;
+          font-family: monospace;
+           background-color: rgb(200,20,0);
+           font-size: 15px;
+           border-radius: 8px;
+            } 
+            
          
       </style>
     </head>
@@ -381,33 +391,82 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
         
       </section>
     </div>
-    
+             <script>
+                 function changes(){
+ var stars =["Bryan Cranston",	
+"Anna Gunn",	
+"Aaron Paul",
+"Dean Norris",
+"Betsy Brandt",	 
+"RJ Mitte",	 
+"Bob Odenkirk",
+"Steven Michael Quezada", 
+"Jonathan Banks",
+"Giancarlo Esposito",
+"Charles Baker"];
+
+document.getElementById("bBad").innerHTML = stars;
+}
+
+ function changes1(){
+ var stars =["Rainn Wilson",	
+"John Krasinski",	
+"Jenna Fischer",	
+"Leslie David Baker",	
+"Brian Baumgartner",	
+"Angela Kinsey",	
+"Phyllis Smith",	
+"Kate Flannery",	
+"Creed Bratton",	
+"Oscar Nuñez",	
+"B.J. Novak"];
+document.getElementById("office").innerHTML = stars;
+}
+
+function changes2(){
+ var stars= ["Peter Dinklage",	
+"Lena Headey",	
+"Emilia Clarke",
+"Kit Harington",	
+"Sophie Turner",	
+"Maisie Williams",	
+"Nikolaj Coster-Waldau",	
+"Iain Glen",	 
+"Alfie Allen",	
+"John Bradley",	
+"Aidan Gillen",	
+"Conleth Hill"];
+
+document.getElementById("gth").innerHTML = stars;
+}
+                 </script>
      <div class='part4'>
               
         
         <article class='third'> 
           <h2 id='ref'>TRENDING</h2>
-          <img src="GTH.jpg" alt="">
-          <p>Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss.
+          <img src="GTH.jpg" alt=""> 
+          <p id="gth">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss.
               It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, 
               the first of which is A Game of Thrones</p>
-          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+          <button id="button" onclick="changes2()">The Cast</button>
         </article>
 
         <article class='third' >
           <h2 id='ref'>MOST POPULAR</h2>
-          <img src="brbad.jpg" alt="">
-          <p> Breaking Bad is an American neo-western crime drama television series created and produced by Vince Gilligan. 
+          <img  src="brbad.jpg" alt="">
+          <p id="bBad"> Breaking Bad is an American neo-western crime drama television series created and produced by Vince Gilligan. 
               The show originally aired on AMC for five seasons, from January 20, 2008 to September 29, 2013</p>
-          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+          <button id="button" onclick="changes()">The Cast</button>
+          
         </article>
         <!-- article 3 -->
         <article class='third'>
           <h2 id='ref'>TOP RATED</h2>
           <img src="office.jpg" alt="">
-          <p>The Office is an American television sitcom that aired on NBC from March 24, 2005,
+          <p id="office">The Office is an American television sitcom that aired on NBC from March 24, 2005,
               to May 16, 2013, lasting nine seasons.It is an adaptation of the original BBC series of the same name and was adapted for American television .</p>
-          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+          <button id="button" onclick="changes1()">The Cast</button>
         </article>  
          </div>
         
