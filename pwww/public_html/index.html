@@ -102,9 +102,7 @@
         </article>
       </section>
       
-
-  
-        
+     
           
        
   
@@ -116,11 +114,13 @@
             <h2>POPULAR<span style="color:rgb(200,0,0); padding: 0px;"> ACTORS</span></h2>  
           <figure>
               <img src="MS!.jpg" width="225" height="225" alt="there's no photo">
+              <p id="f"></p>
           </figure>
         </article>
           <article class="forth"> 
           <figure>
               <img src="JL1.jpg" width="225" height="225" alt="there's no photo"> 
+              <p id="s"></p>
           </figure>
 
 <!--<h2>AVATAR <span style="color:rgb(200,0,0); padding: 0px;"> <br>epic science fiction film</span></h2> 
@@ -133,9 +133,43 @@
                
             <figure>
               <img src="LD1.jpg" width="225" height="225" alt="there's no photo"> 
+              <p id="th"></p>
               </figure>
         </article>
-         
+       <script>
+             
+var second = {
+  firstName : "Jennifer",
+  lastName  : "Lawrence",
+  age     : 28,
+  eyeColor  : "blue"
+};
+
+var third = {
+  firstName : "Leonardo",
+  lastName  : "DiCaprio",
+  age     : 44,
+  eyeColor  : "blue"
+};
+
+var first = {
+  firstName : "Meryl",
+  lastName  : "Strep",
+  age     : 69,
+  eyeColor  : "grey"
+};
+
+// Display some data from the object:
+document.getElementById("f").innerHTML =
+first.firstName + " " + first.lastName + " is " + first.age + " years old.";
+document.getElementById("s").innerHTML =
+second.firstName + " " + second.lastName +  " is " + second.age + " years old.";
+document.getElementById("th").innerHTML =
+third.firstName +  " " + third.lastName + " is " + third.age + " years old.";
+           
+       </script>    
+  
+        
          <article class="forth">
     <canvas id="myCanvas" width="210" height="100" style="border:1px solid #d3d3d3;"></canvas>
 

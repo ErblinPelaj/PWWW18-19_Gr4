@@ -16,42 +16,31 @@ var actors = [
   
   
   
+var second = {
+  firstName : "Jennifer",
+  lastName  : "Lawrence",
+  age     : 28,
+  eyeColor  : "blue"
+};
 
-               function changes(){
- var stars =["Bryan Cranston",	
-"Anna Gunn",	
-"Aaron Paul",
-"Dean Norris",
-"Betsy Brandt",	 
-"RJ Mitte",	 
-"Bob Odenkirk",
-"Steven Michael Quezada", 
-"Jonathan Banks",
-"Giancarlo Esposito",
-"Charles Baker"];
+var third = {
+  firstName : "Leonardo",
+  lastName  : "DiCaprio",
+  age     : 44,
+  eyeColor  : "blue"
+};
 
-document.getElementById("bBad").innerHTML = stars;
-}
+var first = {
+  firstName : "Meryl",
+  lastName  : "Strep",
+  age     : 69,
+  eyeColor  : "grey"
+};
 
- function changes1(){
- var stars =["Bryan Cranston",	
-"Anna Gunn",	
-"Aaron Paul",
-"Dean Norris",
-"Betsy Brandt",	 
-"RJ Mitte",	 
-"Bob Odenkirk",
-"Steven Michael Quezada", 
-"Jonathan Banks",
-"Giancarlo Esposito",
-"Charles Baker"];
-
-document.getElementById("gth").innerHTML = stars;
-}
-
-
-
-function msg(){  
- alert("Hello Javatpoint");  
-}
-//console.warn('Hi!');
+// Display some data from the object:
+document.getElementById("f").innerHTML =
+first.firstName + " " + first.lastName + " is " + first.age + " years old.";
+document.getElementById("s").innerHTML =
+second.firstName + " " + second.lastName +  " is " + second.age + " years old.";
+document.getElementById("th").innerHTML =
+third.firstName +  " " + third.lastName + " is " + third.age + " years old.";
