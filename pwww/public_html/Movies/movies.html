@@ -9,7 +9,8 @@
         <style>
 
           body{
-            background-image: gray-gradient.jpg;
+            margin:0px;
+            
           }
           #header{
               background-color: rgb(50,50,50);
@@ -148,10 +149,57 @@
           }
           #movie{
             position: absolute;
-            top: 23%;
-            left: 5%;
-            border-radius: 5%;
+            top: 70%;
+            left: 90%;
+            border-radius: 50%;
           }
+          
+          .pulsate {
+    -webkit-animation: puls 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+@-webkit-keyframes puls {
+    0% { 
+        opacity: 0.1;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.1;
+    }
+}
+
+ .myElement {
+        animation: rotating 3s linear infinite;
+    }
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+ #button{
+                padding: 10px;
+           color: white;
+          font-family: monospace;
+           background-color: rgb(200,20,0);
+           font-size: 15px;
+           border-radius: 8px;
+            } 
         </style>
     </head>
 
@@ -180,8 +228,34 @@
              <p>Presenting our list of the most viewed 2018 movies!</p>
 
           </article>
-            <img id="movie" src="movies.png" >
+<!--            <img id="movie" src="movies.png" >-->
+<video id="video" style="padding: 40px 20px 0px 20px; border-radius: 10px;" width="700" height="290">
+  <source src="movie.mp4" type="video/mp4">
+</video>
+ <button  id="button" onclick="playPause()">Play/Pause</button> 
+ 
+ <script>
+     var myVideo = document.getElementById("video"); 
 
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+ </script>
+<p>
+ <a href="https://hdeuropix.io/">
+ <img id="movie" class="myElement" src="more.png" >
+</a>
+
+
+<article style="width:20%; float: right;">
+             
+             <h1 class="pulsate">Presenting our list of the most viewed 2018 movies!</h1>
+
+          </article>
         </div>
 
         <div id="part1" >
@@ -209,6 +283,8 @@
                     <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
+            
+            
 
         </div>
 
