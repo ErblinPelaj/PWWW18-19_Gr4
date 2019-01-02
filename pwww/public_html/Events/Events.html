@@ -5,6 +5,7 @@
     <title>Events</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="stilizimi.css">
+<script src="jquery-3.3.1.min.js"></script>
 <style>
     footer p {
               color:black;
@@ -70,7 +71,31 @@ h1 {
               color:lightyellow;
               font-weight:300;
                        }
+                       
+  button {
+                border-color: black;
+                border-style:inset;
+                color:rgb(200,20,0);
+                font-weight: bolder;
+                background-color:#282828;
+                 }
 </style>
+ <script>
+              $(function(){
+                  $("#button").click(function(){
+                  $("#pjesa3").animate({borderBottom: 0});
+              });
+                  $("#button1").click(function(){
+                  $(".forth table").fadeTo(1000, 0.0);
+              });
+                 $("#button2").click(function(){
+                 $("#h1").slideUp(1000);
+              });
+                $("#button3").click(function(){
+                 $("#h1").slideDown(1000);
+              });
+              });
+          </script>
 </head>
 <body>
 
@@ -115,7 +140,9 @@ h1 {
       <!-- services area -->
       <section id="pjesa3" >
         <!-- article 1 -->
-        <a name="soon"><h1>UPCOMING EVENTS</h1></a>
+        <a name="soon"><h1 id="h1">UPCOMING EVENTS</h1></a>
+        <button id="button2">SlideUP</button><br>
+        <button id="button3">SlideDown</button>
         <article class="forth">
           <h2>Oscars</h2>
           <img src="Os.jpg" alt="There is a photo here" width="200" height="200">
@@ -204,7 +231,8 @@ h1 {
                   </tr>
               </table>
           </article>
-     
+               <button id="button">Animate</button>
+          <button id="button1">Fade</button>
       
       </section>
     
