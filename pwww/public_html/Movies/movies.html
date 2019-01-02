@@ -5,7 +5,7 @@
         <title>MOVIES</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <script src="jquery-3.3.1.min.js"></script>
         <style>
 
           body{
@@ -218,8 +218,33 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
             padding: 10px;
 /*            background-image: url("bback.jpg");*/
         }
+                  button {
+              border-color: black;
+              border-style:inset;
+              color:rgb(200,20,0);
+              font-weight: bolder;
+              background-color:#282828;
+                }
  
         </style>
+        <script>
+            $(function() {
+             $("#btn3").click(function(){
+                   $("#img").before("<b>Before</b>");
+                });
+
+                $("#btn4").click(function(){
+                   $("#img").after("<i>After</i>");
+                 }); 
+                 
+                $("#btn5").click(function(){
+                 $("#testh1").text("Most popular 2018 movies");
+               });
+                $("#btn6").click(function(){
+                 $("#testh1").remove();
+               });
+             });
+        </script>
     </head>
 
     <body>
@@ -243,7 +268,7 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
         <div class="mainpart">
 
           <article id="figcap">
-             <h2>MOST WANTED 2018 MOVIES</h2>
+              <h2> MOST WANTED 2018 MOVIES.</h2>
              <p>Presenting our list of the most viewed 2018 movies!</p>
 
           </article>
@@ -288,7 +313,7 @@ function playPause() {
         </div>
 
         <div id="part1" >
-            <a name="top"><h1>Top Rated Movies</h1></a>
+            <a name="top"><h1 id="testh1"> <button id="btn5">Set Text</button> Top Rated Movies <button id="btn6">Remove Text</button></h1></a>
             <article class="forth">
                 <h2>Shawshank Redemption</h2>
                 <figure>
@@ -300,7 +325,7 @@ function playPause() {
             <article class="forth">
                 <h2>The Godfather</h2>
                 <figure>
-                    <img src="g.jpg" width="200" height="300" alt="there's no photo">
+                    <img src="g.jpg" width="200" height="300" alt="there's no photo" >
                     <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
@@ -308,11 +333,13 @@ function playPause() {
             <article class="forth">
                 <h2>The Dark Knight</h2>
                 <figure>
-                    <img src="d.jpg" width="200" height="300" alt="there's no photo">
+                    <img src="d.jpg" width="200" height="300" alt="there's no photo" id="img">
                     <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-   
+
+<button id="btn3">Before</button>
+<button id="btn4">After</button>
             
 <article class="forth">
 <form action="#" method="get" id="bestf" >
@@ -446,24 +473,7 @@ function playPause() {
     </p>          
 </form>  
      </article>       
-<!--            <article class="forth">
-          <form name="forma2" action="#" method="get" onsubmit="return formValidation1()">
-         <p>Name: <input type="text" name="Name"> </p>      
-         <p>E-mail Address: <input type="text" name="EMail">  </p><br>        
-         <p>SELECT YOUR NOMINIEE    
-         <select type="text" value="" name="Subject">
-        	<option></option>
-                 <option>Timothée Chalamet, “Call Me by Your Name”</option> 
-                 <option>Daniel Day-Lewis, “Phantom Thread”</option> 
-                 <option>Daniel Kaluuya, “Get Out”</option> 
-                 <option>Gary Oldman, “Darkest Hour”</option> 
-                 <option>Denzel Washington, “Roman J. Israel, Esq.”</option> 
-        </select></p> 
-    <p>Comments:<textarea cols="20" name="Comment"></textarea></p> 
-    
-     <input type="submit" name="butoni1" value="Kyçu">
-</form>
-            </article>-->
+
         </div>
 
         <div id="part1">
