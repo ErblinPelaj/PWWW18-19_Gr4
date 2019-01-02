@@ -452,7 +452,7 @@ document.getElementById("gth").innerHTML = stars;
 
           <img src="GTH.jpg" alt=""> 
           <p id="gth">Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss.
-              It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, 
+              It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, </p>
 
           <button id="button" onclick="changes2()">The Cast</button>
         </article>
@@ -477,7 +477,7 @@ document.getElementById("gth").innerHTML = stars;
           <button id="button" onclick="changes1()">The Cast</button>
         </article>  
 
-          <footer class="more"><a href="#">Read More &raquo;</a></footer>
+
 
 
          </div>
@@ -486,19 +486,20 @@ document.getElementById("gth").innerHTML = stars;
         <article id='pjesaFundit' >
           <h2 style='color:#D32F2F; font-family: "Comic Sans MS",monospace;'>Contact us</h2>
 
-               <form method="get" action="http://www.randyconnolly.com/tests/process.php">
-                   <P> <input id="form" type="text" placeholder="Name"> </P>
-                   <P>  <input id="form" type="email" placeholder="Email"> </P>
-                  <P> <input id="form" type="text" placeholder="Subject"></P>
+               <form method="get" action="http://www.randyconnolly.com/tests/process.php" id="mainForm">
+                   <P> <input id="form" id="emri" type="text" placeholder="Name"> </P>
+                   <P>  <input id="form" id="email" type="email" placeholder="Email"> </P>
+                  <P> <input id="form" id="subjekti" type="text" placeholder="Subject"></P>
                   <P>  <textarea id="form" rows="4" cols="21">Message</textarea></P>
                   <p id="submit"><input id="form" style="background-color: #D32F2F;" type="submit" value="SUBMIT"></p>
 
                </form>
-
+<button onclick="formValidation()" type="button" name="button">Sugjero</button>
       </article>
 
     </div>
     </div>
+                 <script src="public_html/javaScript.js"></script>
     </body>
     
 </html>

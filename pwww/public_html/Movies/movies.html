@@ -5,7 +5,7 @@
         <title>MOVIES</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <style>
 
           body{
@@ -211,6 +211,14 @@
     left:7%;
           
             } 
+            
+            .part5{
+background-image: linear-gradient(to bottom, whitesmoke, gray);
+            height:400px;
+            padding: 10px;
+/*            background-image: url("bback.jpg");*/
+        }
+ 
         </style>
     </head>
 
@@ -305,6 +313,47 @@ function playPause() {
                 </figure>
             </article>
             
+            <script>
+function formValidation() {
+ 
+   var movie, regisor, actor;
+ 
+   movie = document.getElementById("fmovie");
+   regisor = document.getElementById("fregisor");
+  actor = document.getElementById("factor");
+ 
+   try {
+    if(movie.value === ""){
+    throw "Please write the top rated movie";
+   }
+ 
+    if(regisor.value === ""){
+    throw "Please write the best regisor of your choice";
+   }
+ 
+    if(actor.value === ""){
+     throw "Please write the best actor/acctress of your choice";
+   }
+ 
+    document.getElementById("bestf").submit();
+ 
+  }
+   catch (error) {
+    alert(error);
+  }
+ 
+  }
+</script>
+<article class="forth">
+<form action="#" method="get" id="bestf" >
+    <p><label>Top rated movie</label>: <input type="text" id="fmovie"> </p>
+    <p><label>The best regisor</label>: <input type="text" id="fregisor"></p>          
+   <p><label>The best actor</label>: <input type="text" id="factor"> </p>
+                         
+  <button onclick="formValidation()" type="button">Suggest your choice</button>
+         </form>	        
+
+  </article>          
             
 
         </div>
@@ -365,7 +414,7 @@ function playPause() {
 
         </div>
 
-        <div id="pjesa4">
+        <div class="part5">
       <section class="endForth" >
           <h2>About us</h2>
           <img src="vesa.jpg" width="215" height="90" alt="">
@@ -374,43 +423,8 @@ function playPause() {
            <footer class="more2"><a href="#">Read More &raquo;</a></footer>
       </section>
 
-      <section class="endForth">
-          <h2>Quick links</h2>
-          <nav>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor sit</a></li>
-            <li><a href="#">Amet consectetur</a></li>
-            <li><a href="#">Praesent vel sem id</a></li>
-            <li><a href="#">Curabitur hendrerit est</a></li>
-            <li><a href="#">Aliquam reger erat</a></li>
-            <li><a href="#">Lorem ipsum dolor sit</a></li>
-            <li><a href="#">Amet consectetur</a></li>
-            <li><a href="#">Praesent vel sem id</a></li>
-            <li><a href="#">Curabitur hendrerit est</a></li>
-            <li><a href="#">Aliquam reger erat</a></li>
-          </ul>
-        </nav>
-      </section>
+    
 
-      <section class="endForth">
-          <h2>Latest Blog posts</h2>
-           <article>
-
-            <h3>Post Title</h3>
-            <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
-
-          <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
-          <footer class="more2"><a href="#">Read More &raquo;</a></footer>
-        </article>
-           <article>
-
-            <h3>Post Title</h3>
-            <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
-
-          <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
-          <footer class="more2"><a href="#">Read More &raquo;</a></footer>
-        </article>
-      </section>
 
                       <section class="endForth">
           <h2>Categories</h2>
@@ -435,10 +449,14 @@ function playPause() {
 <form action="http://www.randyconnolly.com/tests/process.php" method="get">
     <input ondragover="">
 <a href="mailto:someone@example.com">Send email</a>
+</form>
         </article>
 
       </section>
-
+            <section  class="endForth">      
+     <button onclick="lokacioni()">Click here to show the location</button>   
+     <p id="location"></p>
+</section> 
 
   <!-- Footer -->
         <div>
@@ -449,6 +467,7 @@ function playPause() {
 </div>
 
         </div>
+        <script src="newjavascript.js">  </script>
     </body>      
 
 </html>
