@@ -4,6 +4,7 @@
         <title>SHOWBIZ & NEWS</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="jquery-3.3.1.min.js"></script>
         <style>
 
           #header{
@@ -12,6 +13,13 @@
               height:120px;
 
           }
+          button {
+              border-color: black;
+              border-style:inset;
+              color:rgb(200,20,0);
+              font-weight: bolder;
+              background-color:#282828;
+                }
           #head1{
               margin: 0px;
               padding-top: 40px;
@@ -218,6 +226,20 @@ body{
 }       
 
         </style>
+              <script>
+            $(function() {
+                $("#button").click(function(){
+                    $("#figcap").hide(1000,function(){
+                        alert("Hidden article.To see it,click on the show button!");
+                    });
+                });
+                 $("#button1").click(function(){
+                    $("#figcap").show(1000);
+                });
+    
+});
+        </script>
+
     </head>
   <body>  
         <!-- / Header i faqes -->
@@ -252,6 +274,8 @@ body{
              <p>Catch the latest news about your favorite movies or actors!</p>
 
           </article>
+<button id="button">Hide</button><br>
+<button id="button1">Show</button>
 
 <a href="https://www.dailymail.co.uk/tvshowbiz/index.html">
  <img id="movie" class="rrotullim" src="more.png" >
