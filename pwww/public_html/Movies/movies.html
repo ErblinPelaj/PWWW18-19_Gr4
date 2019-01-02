@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="jquery-3.3.1.min.js"></script>
+         <script src="newjavascript.js">  </script>
         <style>
 
           body{
@@ -415,14 +416,14 @@ function playPause() {
     if (email.value.indexOf("@", 0) < 0)                 
     { 
         window.alert("Please enter a valid e-mail address."); 
-        email.focus(); 
+     
         return false; 
     } 
    
     if (email.value.indexOf(".", 0) < 0)                 
     { 
         window.alert("Please enter a valid e-mail address."); 
-        email.focus(); 
+      
         return false; 
     } 
    
@@ -437,42 +438,19 @@ function playPause() {
     { 
         window.alert("Please enter your password"); 
          
-        return flase; 
+        return false; 
     } 
    
     if (selecti.selectedIndex < 1)                  
     { 
-        alert("Please enter your course."); 
+        alert("Please enter your nominee."); 
     
         return false; 
     } 
    
     return true; 
 }</script> 
-    <article class="forth">
-           <form name="form2" action="#" onsubmit="return formValidation1()" method="post">  
-      
-    <p>Name: <input type="text"  name="Name"> </p>        
-    <p> Address: <input type="text" name="Address">  </p>
-    <p>E-mail Address: <input type="text"  name="EMail">  </p> 
-     <p>Password: <input type="text"  name="Password"> </p>
-    <p>Telephone: <input type="text" name="Telephone"> </p>   
-           
-    <p>SELECT YOUR NOMINIEE    
-         <select type="text" value="" name="Subject">
-        	<option></option>
-                 <option>Timothée Chalamet, “Call Me by Your Name”</option> 
-                 <option>Daniel Day-Lewis, “Phantom Thread”</option> 
-                 <option>Daniel Kaluuya, “Get Out”</option> 
-                 <option>Gary Oldman, “Darkest Hour”</option> 
-                 <option>Denzel Washington, “Roman J. Israel, Esq.”</option> 
-        </select></p>  
-    
-    <p><input type="submit" value="send" name="Submit">      
-        <input type="reset" value="Reset" name="Reset">   
-    </p>          
-</form>  
-     </article>       
+          
 
         </div>
 
@@ -501,7 +479,30 @@ function playPause() {
                     <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-
+ <article class="forth">
+           <form name="form2" action="#" onsubmit="return formValidation1()" method="post">  
+      
+    <p>Name: <input type="text"  name="Name"> </p>        
+    <p> Address: <input type="text" name="Address">  </p>
+    <p>E-mail Address: <input type="text"  name="EMail">  </p> 
+     <p>Password: <input type="text"  name="Password"> </p>
+    <p>Telephone: <input type="text" name="Telephone"> </p>   
+           
+    <p>SELECT YOUR NOMINIEE    
+         <select type="text" value="" name="Subject">
+        	<option></option>
+                 <option>Timothée Chalamet, “Call Me by Your Name”</option> 
+                 <option>Daniel Day-Lewis, “Phantom Thread”</option> 
+                 <option>Daniel Kaluuya, “Get Out”</option> 
+                 <option>Gary Oldman, “Darkest Hour”</option> 
+                 <option>Denzel Washington, “Roman J. Israel, Esq.”</option> 
+        </select></p>  
+    
+    <p><input type="submit" value="send" name="Submit">      
+        <input type="reset" value="Reset" name="Reset">   
+    </p>          
+</form>  
+     </article>
         </div>
 
         <div class="part5">

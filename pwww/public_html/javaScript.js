@@ -16,52 +16,73 @@
         if ( hour >= 6 )
         document.body.background = "c.jpg";
         } 
-function formValidation1()                                    
+ function formValidation1()                                    
 { 
-    var name = document.forms["forma2"]["Name"];               
-    var email = document.forms["forma2"]["EMail"];   
-    var what =  document.forms["forma2"]["Subject"];  
-
+    var name = document.forms["form2"]["Name"];               
+    var email = document.forms["form2"]["EMail"];    
+    var phone = document.forms["form2"]["Telephone"];  
+    var selecti =  document.forms["form2"]["Subject"];  
+    var password = document.forms["form2"]["Password"];  
+    var address = document.forms["form2"]["Address"];  
+   
     if (name.value === "")                                  
     { 
         window.alert("Please enter your name."); 
+       
         return false; 
     } 
    
     if (address.value === "")                               
     { 
-        window.alert("Please enter your address.");  
+        window.alert("Please enter your address."); 
+    
         return false; 
     } 
        
     if (email.value === "")                                   
     { 
         window.alert("Please enter a valid e-mail address."); 
+        
         return false; 
     } 
    
     if (email.value.indexOf("@", 0) < 0)                 
     { 
         window.alert("Please enter a valid e-mail address."); 
+     
         return false; 
     } 
    
     if (email.value.indexOf(".", 0) < 0)                 
     { 
         window.alert("Please enter a valid e-mail address."); 
-        email.focus(); 
+      
         return false; 
     } 
    
-   
-    if (what.selectedIndex < 1)                  
+    if (phone.value === "")                           
     { 
-        alert("Please enter your nominee"); 
-        what.focus(); 
+        window.alert("Please enter your telephone number."); 
+     
         return false; 
     } 
- 
-   } 
+   
+    if (password.value === "")                        
+    { 
+        window.alert("Please enter your password"); 
+         
+        return false; 
+    } 
+   
+    if (selecti.selectedIndex < 1)                  
+    { 
+        alert("Please enter your nominee."); 
+    
+        return false; 
+    } 
+   
+    return true; 
+}
     
 function formValidation() {
  
