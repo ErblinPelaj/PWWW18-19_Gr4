@@ -16,7 +16,53 @@
         if ( hour >= 6 )
         document.body.background = "c.jpg";
         } 
+function formValidation1()                                    
+{ 
+    var name = document.forms["forma2"]["Name"];               
+    var email = document.forms["forma2"]["EMail"];   
+    var what =  document.forms["forma2"]["Subject"];  
 
+    if (name.value === "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        return false; 
+    } 
+   
+    if (address.value === "")                               
+    { 
+        window.alert("Please enter your address.");  
+        return false; 
+    } 
+       
+    if (email.value === "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+   
+    if (what.selectedIndex < 1)                  
+    { 
+        alert("Please enter your nominee"); 
+        what.focus(); 
+        return false; 
+    } 
+ 
+   } 
+    
 function formValidation() {
  
    var name;
@@ -49,53 +95,7 @@ function formValidation() {
  
   }
 
- function changes(){
- var stars =["Bryan Cranston",	
-"Anna Gunn",	
-"Aaron Paul",
-"Dean Norris",
-"Betsy Brandt",	 
-"RJ Mitte",	 
-"Bob Odenkirk",
-"Steven Michael Quezada", 
-"Jonathan Banks",
-"Giancarlo Esposito",
-"Charles Baker"];
 
-document.getElementById("bBad").innerHTML = stars;
-}
-
- function changes1(){
- var stars =["Rainn Wilson",	
-"John Krasinski",	
-"Jenna Fischer",	
-"Leslie David Baker",	
-"Brian Baumgartner",	
-"Angela Kinsey",	
-"Phyllis Smith",	
-"Kate Flannery",	
-"Creed Bratton",	
-"Oscar Nuñez",	
-"B.J. Novak"];
-document.getElementById("office").innerHTML = stars;
-}
-
-function changes2(){
- var stars= ["Peter Dinklage",	
-"Lena Headey",	
-"Emilia Clarke",
-"Kit Harington",	
-"Sophie Turner",	
-"Maisie Williams",	
-"Nikolaj Coster-Waldau",	
-"Iain Glen",	 
-"Alfie Allen",	
-"John Bradley",	
-"Aidan Gillen",	
-"Conleth Hill"];
-
-document.getElementById("gth").innerHTML = stars;
-}
 
 
 
