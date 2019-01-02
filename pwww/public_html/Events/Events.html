@@ -106,7 +106,10 @@ h1 {
                $("#btn3").click(function(){
                 alert("Value: " + $("#test1").val());
                });
-         });
+                 $("#btn4").click(function(){
+                 $("#test1").val("example@example.exp");
+               });
+            });
           </script>
 </head>
 <body>
@@ -128,19 +131,19 @@ h1 {
     <section class="head6" >
         <a name="news"><h1>LATEST NEWS</h1></a>
         <div id="papasi">
-            <figure><img src="SB1.jpg" alt="There is a photo here" width="450" height="280" >
+            <figure><img src="SB1.jpg" alt="There is a photo here" width="450" height="280">             
         <figcaption >
-            <h5 style="font-size: 150%; margin: 3px;padding-bottom:0px;" id="test"><i>The 76th Golden Globe Awards nominations are finally here.</i><button id="btn1">Show Text</button><button id="btn2">Show Html</button></h5>
+            <h5 style="font-size: 150%; margin: 3px;padding-bottom:0px;" id="test"><i>The 76th Golden Globe Awards nominations are finally here.</i><button id="btn1">Show Text</button>  <button id="btn2">Show Html</button></h5>
           <p> The 76th Golden Globe Awards will be held on Jan. 6, 2019, at the Beverly Hilton Hotel in Los Angeles. Andy Samberg and Sandra Oh will host the ceremony.“A Star Is Born,” “Vice” and “The Favourite” were among the leading film nominees for the Golden Globes. These are the main storylines going into the awards show...</p>
           <footer class="more"><a href="#">Read More &raquo;</a></footer>
         </figcaption>
       </figure>
      <nav id="lp3" >
-         <h2><i>OTHER IMPORTANT NEWS.</i></h2>
+         <h2><i> OTHER IMPORTANT NEWS.</i></h2>
         <ul style="list-style-type:disc;">
            
             <li><a href="#">71st Annual Primetime Emmy Awards Date Announced.The 2019 Emmy Awards are scheduled for Sunday, Sept. 22, 2019, Fox and the Television Academy announced Monday.</a></li>
-           <li><a href="#">Emmys: Fox Sets 2019 Show For Traditional Sunday Before Premiere Week</a></li>
+           <li><a href="#">Emmys: Fox Sets 2019 Show For Traditional Sunday Before Premiere Week</a>
            <li><a href="#">Although next year’s Oscars might feel like a long way off, speculation has already begun as to which films might be in contention for the top awards.</a></li>
            <li><a href="#">When is the 2019 Academy Awards and how can I watch it?</a></li>
          </ul>
@@ -303,7 +306,7 @@ h1 {
                    <p><input type="password" name="pw" value="Pasword" pattern=".{6,}" title="Six or more characters"></p>
                    <P>  <input type="email" value="Email" id="test1"> </P>
                    <p>
-                       <button id="btn3">Value</button>
+                       <button id="btn3">Value</button>  <button id="btn4">Set Value</button>
                    </p>
                   <P> <input type="text" value="Subject"></P>
                   <P>  <textarea rows="4" cols="21">Message</textarea></P>
