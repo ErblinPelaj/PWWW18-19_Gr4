@@ -6,7 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <script src="jquery-3.3.1.min.js"></script>
         <style>
-
+            body{
+                margin:0px 0px 0px 0px;
+                background-color:#232323;
+            }
           #header{
               background-color: rgb(50,50,50);
               border-bottom: thin solid black;
@@ -225,7 +228,17 @@ body{
     transform: rotate(360deg);
   }
 }       
+ .part5{
+background-image: linear-gradient(to bottom, whitesmoke, gray);
+            height:400px;
+            padding: 10px;
+/*            background-image: url("bback.jpg");*/
+        }
 
+        #pjesaFundit{
+            text-align: center;
+            width: 100%;
+        }
         </style>
               <script>
             $(function() {
@@ -461,9 +474,34 @@ body{
 
         </section>
 
+<div class="part5">
+        <article id='pjesaFundit' >
+          <h2 style='color:#D32F2F; font-family: "Comic Sans MS",monospace;'>Contact us</h2>
+
+               <form action="http://www.randyconnolly.com/tests/process.php" id="form1">
+                   <p> First name: <input id="form" type="text" name="fname"></p>
+                <p> Last name: <input id="form" type="text" name="lname" form="form1"></p>
+               <p>  Email: <input type="email" name="email"></p>
+               <input id="form" type="radio" name="gender" value="male" checked> Male<br>
+  <input id="form" type="radio" name="gender" value="female"> Female<br>
+  <input id="form" type="radio" name="gender" value="other"> Other<br><br><br>
+               
+                <input id="form" type="submit" value="Submit"><br>
+                
+                </form>
 
 
-        <section id="pjesa4">
+      </article>
+    
+     
+    </div>
+ <div>
+  <footer >
+    <p>Copyright &copy; 2018 Domain Name -All Rights Reserved</p>
+    <p >Template by OS Templates</p>
+  </footer>
+</div>
+<!--        <section id="pjesa4">
       <section class="endForth" >
           <h2>About us</h2>
           <img src="vesa.jpg" width="215" height="90" alt="">
@@ -513,21 +551,14 @@ body{
       <section class="endForth">
           <h2>Contact us</h2>
            <article>
-               <form action="http://www.randyconnolly.com/tests/process.php" id="form1">
-                First name: <input type="text" name="fname"><br>
-                Last name: <input type="text" name="lname" form="form1"><br>
-                Email:&nbsp; &nbsp; &nbsp; &nbsp; <input type="email" name="email"><br>
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="submit" value="Submit"><br>
-                <a href="mailto:someone@example.com">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Send email</a>
-                </form>
-
+              
 
         </article>
 
       </section>
 
 
-  <!-- Footer -->
+   Footer 
         <div>
   <footer >
     <p>Copyright &copy; 2018 Domain Name -All Rights Reserved</p>
@@ -537,6 +568,6 @@ body{
 
 
 
-        </section>
+        </section>-->
 </body>
 </html>
