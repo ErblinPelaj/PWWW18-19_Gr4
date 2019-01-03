@@ -239,7 +239,15 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
             #textForm{
                 font-weight:bold;
                 color:black;
-            }         
+            }  
+            
+            
+            #bestf{
+                position:absolute;
+                top:100%;
+                left:80%;
+                width:150px;
+            }     
         </style>
         <script>
             $(function() {
@@ -461,11 +469,11 @@ function playPause() {
 
 
                       <section class="endForth">
-          <h2>Categories</h2>
+          <h2  style="color:#D32F2F;">Categories</h2>
            <article>
                <form action="http://www.randyconnolly.com/tests/process.php" method="get">
 
-<input list="movies" name="movies">
+<input id="form" list="movies" name="movies">
 <datalist id="movies">
   <option value="Action">
   <option value="Comedy">
@@ -475,20 +483,20 @@ function playPause() {
   <option value="Thriller">
   <option value="Drame">
 </datalist>
-<input type="submit">
+<input id="form" type="submit">
 
 
 </form>
-<h2>Contact Us</h2>
+<h2 style="color:#D32F2F;">Contact Us</h2>
 <form action="http://www.randyconnolly.com/tests/process.php" method="get">
-    <input ondragover="">
-<a href="mailto:someone@example.com">Send email</a>
+    <input id="form" ondragover="">
+<a id="form" href="mailto:someone@example.com">Send email</a>
 </form>
         </article>
 
       </section>
             <section  class="endForth">      
-     <button onclick="lokacioni()">Click here to show the location</button>   
+     <button id="form" onclick="lokacioni()">Click here to show the location</button>   
      <p id="location"></p>
 </section> 
 
