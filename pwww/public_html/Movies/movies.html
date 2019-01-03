@@ -226,7 +226,20 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
               font-weight: bolder;
               background-color:#282828;
                 }
- 
+                
+  #form,#factor,#fregisor,#fmovie{
+                background-color: #555555;
+                color:white;
+                border-radius: 5px;
+                padding: 6px 6px;
+                margin: 0px ;
+
+            } 
+            
+            #textForm{
+                font-weight:bold;
+                color:black;
+            }         
         </style>
         <script>
             $(function() {
@@ -344,11 +357,11 @@ function playPause() {
             
 <article class="forth">
 <form action="#" method="get" id="bestf" >
-    <p><label>Top rated movie</label>: <input type="text" id="fmovie"> </p>
-    <p><label>The best regisor</label>: <input type="text" id="fregisor"></p>          
-   <p><label>The best actor</label>: <input type="text" id="factor"> </p>
+    <p id="textForm"><label>Top rated movie</label>: <input  type="text" id="fmovie"> </p>
+    <p id="textForm"><label>The best regisor</label>: <input  type="text" id="fregisor"></p>          
+   <p id="textForm"><label>The best actor</label>: <input type="text" id="factor"> </p>
                          
-  <button onclick="formValidation()" type="button">Suggest your choice</button>
+  <button id="form" onclick="formValidation()" type="button">Suggest your choice</button>
          </form>	        
 
   </article>          
@@ -381,77 +394,7 @@ function playPause() {
                     <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">WATCH NOW &raquo;</a></footer>
                 </figure>
             </article>
-            <script>
-                
- function formValidation1()                                    
-{ 
-    var name = document.forms["form2"]["Name"];               
-    var email = document.forms["form2"]["EMail"];    
-    var phone = document.forms["form2"]["Telephone"];  
-    var selecti =  document.forms["form2"]["Subject"];  
-    var password = document.forms["form2"]["Password"];  
-    var address = document.forms["form2"]["Address"];  
-   
-    if (name.value === "")                                  
-    { 
-        window.alert("Please enter your name."); 
-       
-        return false; 
-    } 
-   
-    if (address.value === "")                               
-    { 
-        window.alert("Please enter your address."); 
-    
-        return false; 
-    } 
-       
-    if (email.value === "")                                   
-    { 
-        window.alert("Please enter a valid e-mail address."); 
-        
-        return false; 
-    } 
-   
-    if (email.value.indexOf("@", 0) < 0)                 
-    { 
-        window.alert("Please enter a valid e-mail address."); 
-     
-        return false; 
-    } 
-   
-    if (email.value.indexOf(".", 0) < 0)                 
-    { 
-        window.alert("Please enter a valid e-mail address."); 
-      
-        return false; 
-    } 
-   
-    if (phone.value === "")                           
-    { 
-        window.alert("Please enter your telephone number."); 
-     
-        return false; 
-    } 
-   
-    if (password.value === "")                        
-    { 
-        window.alert("Please enter your password"); 
-         
-        return false; 
-    } 
-   
-    if (selecti.selectedIndex < 1)                  
-    { 
-        alert("Please enter your nominee."); 
-    
-        return false; 
-    } 
-   
-    return true; 
-}</script> 
-          
-
+ 
         </div>
 
         <div id="part1">
@@ -480,16 +423,16 @@ function playPause() {
                 </figure>
             </article>
  <article class="forth">
-           <form name="form2" action="#" onsubmit="return formValidation1()" method="post">  
-      
-    <p>Name: <input type="text"  name="Name"> </p>        
-    <p> Address: <input type="text" name="Address">  </p>
-    <p>E-mail Address: <input type="text"  name="EMail">  </p> 
-     <p>Password: <input type="text"  name="Password"> </p>
-    <p>Telephone: <input type="text" name="Telephone"> </p>   
+     
+           <form  name="form2" action="#" onsubmit="return formValidation1()" method="post">   
+    <p id="textForm">Name: <input id="form" type="text"  name="Name"> </p>        
+    <p id="textForm"> Address: <input id="form" type="text" name="Address">  </p>
+    <p id="textForm" >E-mail : <input id="form" type="text"  name="EMail">  </p> 
+     <p id="textForm">Password: <input id="form" type="text"  name="Password"> </p>
+    <p id="textForm">Telephone: <input id="form" type="text" name="Telephone"> </p>   
            
-    <p>SELECT YOUR NOMINIEE    
-         <select type="text" value="" name="Subject">
+    <p id="textForm">SELECT YOUR NOMINIEE    
+         <select id="form" type="text" value="" name="Subject">
         	<option></option>
                  <option>Timothée Chalamet, “Call Me by Your Name”</option> 
                  <option>Daniel Day-Lewis, “Phantom Thread”</option> 
@@ -498,8 +441,8 @@ function playPause() {
                  <option>Denzel Washington, “Roman J. Israel, Esq.”</option> 
         </select></p>  
     
-    <p><input type="submit" value="send" name="Submit">      
-        <input type="reset" value="Reset" name="Reset">   
+    <p><input id="form" type="submit" value="send" name="Submit">      
+        <input  id="form" type="reset" value="Reset" name="Reset">   
     </p>          
 </form>  
      </article>
