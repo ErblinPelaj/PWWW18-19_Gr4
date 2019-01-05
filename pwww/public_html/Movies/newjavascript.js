@@ -3,6 +3,41 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+  function formValidation2()                                    
+{ 
+    var name = document.forms["form3"]["Name"];               
+    var email = document.forms["form3"]["Email"];    
+    var phone = document.forms["form3"]["Subject"];  
+  
+    if (name.value === "")                                  
+    { 
+        window.alert("Please enter your name."); 
+       
+        return false; 
+    } 
+    if (email.value === "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        
+        return false; 
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+     
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+      
+        return false; 
+    } 
+    return true; 
+}
+
 function formValidation() {
  
    var movie, regisor, actor;
