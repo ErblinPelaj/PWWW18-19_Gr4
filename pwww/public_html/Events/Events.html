@@ -6,13 +6,14 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="stilizimi.css">
 <script src="jquery-3.3.1.min.js"></script>
+<script src="newjavascript.js">  </script>
 <style>
-    footer p {
+     footer p {
               color:black;
               font:Paletiono,serif;
           }
       
-     .head6{ 
+     .head6 { 
          color:gainsboro;
          background: url(bback.jpg) no-repeat fixed center; 
          -webkit-background-size: cover;
@@ -20,65 +21,63 @@
          -o-background-size: cover;
          background-size: cover;
          height: 460px;
-         
- 
-}
-.head6,p,a{
-    color:gainsboro;
-    text-decoration: none;
-    padding-top: 2px;
-    margin-top: 0px;
-    word-wrap: normal;
+             }
     
-    
-}
-.head6{border-bottom: 3px inset darkred;}
-h2{ 
-    color:gainsboro;
-    padding-left: 20px;
-}
+     .head6,p,a{
+         color:gainsboro;
+         text-decoration: none;
+         padding-top: 2px;
+         margin-top: 0px;
+         word-wrap: normal;
+               } 
+               
+     .head6{border-bottom: 3px inset darkred;}
+     
+      h2{ 
+         color:gainsboro;
+         padding-left: 20px;
+        }
 
-#pjesa3,#pjesa4{
-    background-color: rgb(40, 0, 0);
-    margin:0px 0px 0px 0px;
-    border-bottom: 3px;
-    border-bottom-style:inset ;
-    background-image: radial-gradient(closest-corner, darkgray 5%, gray 80%, lightgray 95%);
-    
-    
-}
+      #pjesa3,#pjesa4{
+         background-color: rgb(40, 0, 0);
+         margin:0px 0px 0px 0px;
+         border-bottom: 3px;
+         border-bottom-style:inset ;
+         background-image: radial-gradient(closest-corner, darkgray 5%, gray 80%, lightgray 95%);
+         height:520px;   
+                     }
 
 
-h1 {
-  text-shadow: 2px 2px 8px #FF0000;
-}        
-.forth1
-          {
-              margin: 0px;
-              width:24%;
-              height: 300px;
-              text-align: left;
-              display: inline-block;
-              padding: 0px;
-                
+       h1 {
+        text-shadow: 2px 2px 8px #FF0000;
+          }        
+       .forth1{
+         margin: 0px;
+         width:24%;
+         height: 300px;
+         text-align: left;
+         display: inline-block;
+         padding: 0px;             
+              }
+       body{
+         padding: 0px;
+         margin: 0px;
           }
-          body{
-              padding: 0px;
-              margin: 0px;
-          }
-          .forth table tr th { background-color: darkkhaki;}
-          .forth table td {
-              color:lightyellow;
-              font-weight:300;
+          
+       .forth table tr th { background-color: darkkhaki;}
+          
+       .forth table td {
+          color:lightyellow;
+          font-weight:300;
                        }
                        
-  button {
-                border-color: black;
-                border-style:inset;
-                color:rgb(200,20,0);
-                font-weight: bolder;
-                background-color:#282828;
-                 }
+        button {
+          border-color: black;
+          border-style:inset;
+          color:rgb(200,20,0);
+          font-weight: bolder;
+          background-color:#282828;
+               }
 </style>
  <script>
               $(function(){
@@ -162,7 +161,11 @@ h1 {
           <h2>Oscars</h2>
           <img src="Os.jpg" alt="There is a photo here" width="200" height="200">
           <p>This years nominees are finally reveled and some of the movies with the most nominees,as we thought,would be.
-              This years nominees are finally reveled and some of the movies with the most nominees,as we thought,would be.. .</p>
+              Above is the oscars theme tune.</p>
+          <audio controls>
+  <source src="osc.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+          </audio>
           <footer class="more"><a href="#">Read More &raquo;</a></footer>
         </article>
         <!-- article 2 -->
@@ -177,8 +180,12 @@ h1 {
         <article class="forth">
           <h2>Golden Globes</h2>
           <img src="GG.jpg" alt="There is a photo here" width="200" height="200">
-          <p>This years nominees are finally reveled and some of the movies with the most nominees,as we thought,would be.
-          This years nominees are finally reveled and some of the movies with the most nominees,as we thought,would be...</p>
+          <p>This years nominees are finally reveled and some of the movies with the most nominees are...
+          Above is the Golden Globes theme tune.</p>
+         <audio controls>
+  <source src="GG.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+          </audio>
           <footer class="more"><a href="#">Read More &raquo;</a></footer>
         </article>
       </section>
@@ -186,25 +193,35 @@ h1 {
       <section id="pjesa3"  >
           <a name="winners"><h1>MOST AWARDS WON</h1></a>
           <article class="forth" >
-           
-          <figure><img src="Ti.jpg" width="250" height="180" alt="">
-            <figcaption>
+           <figure><img src="Ti.jpg" width="250" height="180" alt="No picture">
+            <figcaption>       
                 <h2>Titanic</h2>
               <p>Titanic is a 1997 American epic romantic disaster movie.It received positive critical reviews. The movie won 11 Academy Awards, and was nominated for fourteen other Academy Awards...</p>
-              <footer class="more"><a href="#">Read More &raquo;</a></footer>
             </figcaption>
-          </figure>
+              <footer class="more"><a href="#">Read More &raquo;</a></footer>          
         </article>
         <article class="forth">
-          <figure><img src="BH.jpg" width="250" height="180" alt="">
-            <figcaption>
+           <video id="video1" style="padding: 40px 20px 0px 20px; border-radius: 10px;" width="250" height="180">
+                  <source src="BHV.mp4" type="video/mp4">
+              </video>
+              <button  id="buttonFilm1" onclick="playPause1()">Play/Pause</button> 
+               <script>
+                    var myVideo1 = document.getElementById("video1"); 
+
+                         function playPause1() { 
+                               if (myVideo1.paused) 
+                                   myVideo1.play(); 
+                               else 
+                                   myVideo1.pause(); 
+                                                } 
+               </script>
                 <h2>Ben-Hur</h2>
               <p>Ben-Hur is a 1959 American epic religious drama film.It premiered at <abbr title="Loew's State Theatre">LST</abbr> in New York City on November 18, 1959.It won a record 11 Academy Awards.Ben-Hur also won three Golden Globe Awards...</p>
               <footer class="more"><a href="#">Read More &raquo;</a></footer>
-            </figcaption>
-          </figure>
+            
+          
         </article>
-          <article class="forth">
+          <article style="position:absolute; top:201%;"  class="forth" >
               <table border="1" cellspacing="2">
                   <tr>
                       <th>Actor/Oscar</th>
@@ -245,9 +262,13 @@ h1 {
                           </ul></td>
                   </tr>
               </table>
+              <br>
+              <footer style="float:right;">
+                    <button id="button">Animate</button>
+                    <button id="button1">Fade</button>
+              </footer>
           </article>
-               <button id="button">Animate</button>
-          <button id="button1">Fade</button>
+            
       
       </section>
     
