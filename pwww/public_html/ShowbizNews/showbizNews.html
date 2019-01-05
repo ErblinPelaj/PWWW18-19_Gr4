@@ -5,7 +5,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <script src="jquery-3.3.1.min.js"></script>
+         <script src="newjavascript.js"></script>
         <style>
+            #div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
             body{
                 margin:0px;
              
@@ -476,6 +485,28 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
         </section>
 
 <div class="part5">
+            <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+          <article id="pjesaFundit">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="logo.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </article>
         <article id='pjesaFundit' >
           <h2 style='color:#D32F2F; font-family: "Comic Sans MS",monospace;'>Contact us</h2>
 

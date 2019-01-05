@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 footer p {
-              color:black;
+              color:lightgray;
               font:Paletiono,serif;
           }
       
@@ -60,7 +60,7 @@ footer p {
          padding: 0px;             
               }
        body{
-         padding: 0px;
+         background-color: #232323;
          margin: 0px;
           }
           
@@ -78,6 +78,17 @@ footer p {
           font-weight: bolder;
           background-color:#282828;
                }
+               
+                .part5{
+background-image: linear-gradient(to bottom, whitesmoke, gray);
+            height:400px;
+            padding: 10px;
+        }
+        
+        #pjesaFundit{
+            text-align: center;
+            width: 100%;
+        }
                
              .third{
               margin: 0px 0px 0px 0px;
