@@ -1,0 +1,312 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 5, 2019, 2:43:13 PM
+    Author     : Lenovo
+*/
+
+ body{
+               margin:0px;
+           }
+
+          #header{
+              background-color: rgb(50,50,50);
+              border-bottom: thin solid black;
+              height:120px;
+
+
+          }
+          #head1{
+               margin: 0px;
+              padding-top: 30px;
+              padding-left: 10px;
+              color: dimgray;
+              font-family: "Times New Roman",Times,serif;
+              font-weight:normal;
+              text-align: left;
+              width:350px;
+          }
+
+          #head2{
+
+               padding-top: 75px;
+               padding-left: 10px;
+               background-color: rgb(30,30,30);
+               color:dimgray;
+               height:400px;
+           }
+           #head2 figure{
+               float:right;
+           }
+            .head6{
+               padding-top: 20px;
+               padding-left: 0px;
+               background-color: white;
+               color:black;
+               height:430px;
+               font-weight:normal;
+           }
+           #lp3{
+
+               color:black;
+               font-weight:normal;
+               float:right;
+               position: absolute;
+               top: 250px;
+               left: 480px;
+
+           }
+           #lp1{
+                float:right;
+                position: absolute;
+                top: 20px;
+                right: 10px;
+                padding:25px 10px 30px 100px;
+          }
+
+
+          #lp1 li {
+              display: inline;
+              padding: 20px;
+              margin: 0px;
+              font-family:"Courier New", monospace;
+              font-weight:normal;
+              font-size:20px;
+              text-decoration: none;
+          }
+
+          #lp1 a{
+              text-decoration: none;
+              color:dimgray;
+          }
+
+          #lp1 li:hover{
+             background-color: rgb(200,20,0);
+             outline-color: rgb(200,20,0);
+             border-radius: 20px;
+
+          }
+          .more a{
+           padding: 5px;
+           color: white;
+           width:fit-content;
+           height:fit-content;
+           background-color: rgb(200,20,0);
+           text-decoration: none;
+           border-radius: 5px;
+
+          }
+
+          #pjesa2
+          {
+              height: 400px;
+              margin: 3px 0px 0px 0px;
+              background-color: lightgrey;
+              padding: 10px 5px;
+              border-bottom: 1px solid gray;
+
+          }
+
+          #pjesa3
+          {
+            height:500px;
+            margin: 0px 0px 0px 0px;
+            background-color: lightgray;
+            padding: 20px 10px;
+            border-bottom: 15px solid gray;
+          }
+
+          #pjesa4{
+              height:500px;
+            margin:5px 0px 0px 0px;
+              background-color: lightgray;
+              padding: 5px;
+
+          }
+          #pjesa4 a,h3{
+              color: rgb(200,20,0);
+              text-decoration: none;
+          }
+          .forth
+          {
+              margin: 5px 0px 0px 0px;
+              width:24%;
+              height: 300px;
+              text-align: center;
+              display: inline-block;
+              padding: 0px;
+
+          }
+
+          .forth1
+          {
+              margin: 0px;
+              width:24%;
+              height: 300px;
+              text-align: left;
+              display: inline-block;
+              padding: 0px;
+
+          }
+
+          article h2 {
+              font-family: serif;
+          }
+
+
+          p,#pjesa4 h2{
+              color:dimgray;
+          }
+
+
+
+
+
+/*           TVSHOWS */
+
+          .part2{
+
+              padding: 10px;
+              height:500px;
+              border-bottom: 1px solid grey;
+/*              background-image: linear-gradient(to bottom, whitesmoke,#232323);
+*/               background-image: url("bback.jpg");
+
+          }
+
+          #fig{
+              background-color: white;
+              width: 40%;
+              margin: 10px 300px 20px 10px;
+              border-right:  15px solid #D32F2F;
+
+          }
+
+
+          #figcap{
+
+                padding:10px;
+                width:45%;
+                background-color:#282828;
+                border-radius: 15px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                color:rgb(200,20,0);
+                border-bottom: 15px solid #D32F2F;
+                font-family: "Courier New", monospace;
+                box-shadow: 10px -10px 5px grey;
+
+
+          }
+
+          .part3{
+/*             background-color:rgb(30,30,30);*/
+             padding: 10px 10px 10px 10px;
+             font-family: "Courier New", monospace;
+              border-bottom: 1px solid black;
+
+
+
+          }
+
+          #pjese3{
+              background-color: #232323;
+              color:rgb(200,20,0);
+              width:65%;
+              border-radius: 15px;
+              border-bottom: 15px solid #D32F2F;
+              font-family: "Courier New", monospace;
+              box-shadow: 10px -10px 5px grey;
+          }
+
+
+          .third{
+              margin: 0px 0px 0px 0px;
+              width:30%;
+
+              text-align: center;
+              display: inline-block;
+              padding: 8px;
+              color:red;
+              font-family: "Courier New", monospace;
+          }
+
+          .part4 {
+
+              height:500px;
+              border-bottom: 10px groove grey;
+               padding-top: 2%;
+
+
+          }
+          #back{
+              background-image: url("a.jpg");
+          }
+        table, th, td
+        {
+            border: 2px solid #D32F2F;;
+
+        }
+
+        th, td
+        {
+            color:gray;
+            padding: 15px;
+        }
+
+        #ref{
+            font-family: "Colonna MT","Courier New", monospace;
+            font-size: 26px;
+        }
+
+        .part5{
+background-image: linear-gradient(to bottom, whitesmoke, gray);
+            height:400px;
+            padding: 10px;
+/*            background-image: url("bback.jpg");*/
+        }
+
+        #pjesaFundit{
+            text-align: center;
+            width: 100%;
+        }
+
+       #a{
+        width:50%;
+        height:300px;
+         margin:10px;
+        }
+
+        #a img {
+         position:absolute;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+            }
+
+         #a img.top:hover {
+            opacity:0;
+            }
+
+            #form,#emri,#email,#subjekti{
+                background-color: #232323;
+                color:white;
+                border-radius: 5px;
+                padding: 6px 6px;
+                margin: 0px ;
+
+            } 
+            
+            #button{
+                padding: 10px;
+           color: white;
+          font-family: monospace;
+           background-color: rgb(200,20,0);
+           font-size: 15px;
+           border-radius: 8px;
+            } 
+            
