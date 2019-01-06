@@ -182,7 +182,7 @@ and open the template in the editor.
               background-color: white;
               width: 40%;
               margin: 10px 300px 20px 10px;
-              border-right:  15px solid #D32F2F;
+              border-right:  15px solid darkred;
 
           }
 
@@ -196,7 +196,7 @@ and open the template in the editor.
                 margin-left: 20px;
                 margin-bottom: 20px;
                 color:rgb(200,20,0);
-                border-bottom: 15px solid #D32F2F;
+                border-bottom: 15px solid darkred;
                 font-family: "Courier New", monospace;
                 box-shadow: 10px -10px 5px grey;
 
@@ -218,7 +218,7 @@ and open the template in the editor.
               color:rgb(200,20,0);
               width:65%;
               border-radius: 15px;
-              border-bottom: 15px solid #D32F2F;
+              border-bottom: 15px solid darkred;
               font-family: "Courier New", monospace;
               box-shadow: 10px -10px 5px grey;
           }
@@ -231,7 +231,7 @@ and open the template in the editor.
               text-align: center;
               display: inline-block;
               padding: 8px;
-              color:red;
+              color:darkred;
               font-family: "Courier New", monospace;
           }
 
@@ -248,7 +248,7 @@ and open the template in the editor.
           }
         table, th, td
         {
-            border: 2px solid #D32F2F;;
+            border: 2px solid darkred;
 
         }
 
