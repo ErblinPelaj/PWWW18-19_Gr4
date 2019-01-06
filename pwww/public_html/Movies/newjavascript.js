@@ -157,8 +157,8 @@ function lokacioni() {
 }
 
 function showPosition(position) {
-  show.innerHTML = "Gjeresia: " + position.coords.latitude + 
-  "<br>Gjatesia: " + position.coords.longitude;
+  alert( "Gjeresia: " + position.coords.latitude + 
+  " dhe Gjatesia: " + position.coords.longitude);
 }
 
 function showError(error) {
