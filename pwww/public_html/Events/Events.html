@@ -239,16 +239,39 @@ Your browser does not support the audio element.
         <article id='pjesaFundit' >
             <h2 style='color:#D32F2F; font-family: "Comic Sans MS",monospace;'>Contact us</h2>
 
-          <form method="get" name="form3" action="http://www.randyconnolly.com/tests/process.php" id="mainForm" onclick="return formValidation2() ">
+<!--          <form method="get" name="form3" action="http://www.randyconnolly.com/tests/process.php" id="mainForm" onclick="return formValidation2() ">
                    <P> <input  id="emri" type="text" placeholder="Name" name="Name"> </P>
                    <P>  <input  id="email" type="email" placeholder="Email" name="Email"> </P>
                   <P> <input  id="subjekti" type="text" placeholder="Subject" name="Subject"></P>
                   <P>  <textarea id="form" rows="4" cols="21">Message</textarea></P>
                   <p ><input name="Submit" id="form" style="background-color: #D32F2F;" type="submit" value="SUBMIT"></p>
 
-               </form>
-                   
-                 
+               </form>-->
+                   <form onsubmit="validate()">
+                   <P> <input  id="emri" type="text" placeholder="Name" name="Name"> </P>
+                   <P>  <input  id="email" type="email" placeholder="Email" name="Email"> </P>
+                 <p> <input type="text" id="phone-number" placeholder="phone number:(123) 456-7890"/></p>
+                 <p><input  type="text" id="postal-code" placeholder="postal code:EC1A 1BB" /> </p>
+                    <p><input type="submit" /></p>
+                    </form>
+          
+        <script> 
+            
+        function validate()
+        {
+    var phoneNumber = document.getElementById('phone-number').value;
+    var postalCode = document.getElementById('postal-code').value;
+    var phoneRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+    var postalRGEX = /^[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}$/i;
+    var phoneResult = phoneRGEX.test(phoneNumber);
+    var postalResult = postalRGEX.test(postalCode);
+    alert("phone:"+ phoneResult + ", postal code: "+postalResult);
+  
+  return false;
+        }   
+
+
+        </script>       
                 
 
       </article>

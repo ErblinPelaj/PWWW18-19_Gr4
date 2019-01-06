@@ -62,12 +62,15 @@ function Directors(first, last, year) {
   
 }
 
-Directors.prototype.award = "Gala";
+Directors.prototype.name = function() 
+{
+  return this.firstName + " " + this.lastName;
+};
 
-var director = new Directors("Guillermo", "del Toro", 2018, "blue");
+
+var director = new Directors("Guillermo", "del Toro", 2018);
 document.getElementById("demo1").innerHTML =
-"The director who won an award at " + director.award + " is " + director.firstName;
- 
+"The director who won an award at Gala is " + director.name();
  
  
  

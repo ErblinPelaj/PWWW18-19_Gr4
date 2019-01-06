@@ -44,6 +44,58 @@ ora.innerHTML = "Ora eshte: "+ timeformat(date);
     return true; 
 }
 
+
+
+function Actors(first, last, year) {
+  this.firstName = first;
+  this.lastName = last;
+  this.year = year;
+  
+}
+
+Actors.prototype.award = "Gala";
+
+var actor = new Actors("Gary", "Oldman", 2018, "blue");
+document.getElementById("demo").innerHTML =
+"The actor who won an award at " + actor.award + " is " + actor.firstName;
+
+
+
+function Directors(first, last, year) {
+  this.firstName = first;
+  this.lastName = last;
+  this.year = year;
+  
+}
+
+Directors.prototype.name = function() 
+{
+  return this.firstName + " " + this.lastName;
+};
+
+
+var director = new Directors("Guillermo", "del Toro", 2018);
+document.getElementById("demo1").innerHTML =
+"The director who won an award at Gala is " + director.name();
+ 
+ 
+ 
+ 
+
+function Sup(first, last, year) {
+  this.firstName = first;
+  this.lastName = last;
+  this.year = year;
+  
+}
+
+Sup.prototype.award = "Gala";
+
+var suport = new Sup("Allison", "Janney", 2018);
+document.getElementById("demo2").innerHTML =
+"The best supporting actress who won an award at " + suport.award + " is " + suport.firstName;
+
+
 function formValidation() {
  
    var movie;

@@ -79,7 +79,7 @@ footer p {
                 padding: 6px 6px;
                 margin: 0px ;
                }
-                 #form,#emri,#email,#subjekti{
+                 #form,#emri,#email,#subjekti,#phone-number,#postal-code{
                 background-color: #232323;
                 color:white;
                 border-radius: 5px;
