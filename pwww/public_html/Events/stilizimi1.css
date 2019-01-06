@@ -20,7 +20,7 @@ footer p {
          -moz-background-size: cover;
          -o-background-size: cover;
          background-size: cover;
-         height: 460px;
+         height: 480px;
              }
     
      .head6,p,a{
@@ -72,17 +72,22 @@ footer p {
                        }
                        
         button {
-/*          border-color: black;
-          border-style:inset;
-          color:rgb(200,20,0);
-          font-weight: bolder;
-          background-color:#282828;*/
-background-color: #555555;
+                background-color: #555555;
                 color:white;
                 border-radius: 5px;
                 padding: 6px 6px;
                 margin: 0px ;
                }
+                 #form,#emri,#email,#subjekti{
+                background-color: #232323;
+                color:white;
+                border-radius: 5px;
+                padding: 6px 6px;
+                margin: 0px ;
+
+            }
+        
+            
                
                 .part5{
 background-image: linear-gradient(to bottom, whitesmoke, gray);
