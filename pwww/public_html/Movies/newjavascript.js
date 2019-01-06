@@ -3,6 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+
+var date = new Date();
+var ora = document.getElementById("hour");
+ora.innerHTML = "Ora eshte: "+ timeformat(date);
+
   function formValidation2()                                    
 { 
     var name = document.forms["form3"]["Name"];               
@@ -40,7 +46,9 @@
 
 function formValidation() {
  
-   var movie, regisor, actor;
+   var movie;
+   var regisor;
+   var actor;
  
    movie = document.getElementById("fmovie");
    regisor = document.getElementById("fregisor");

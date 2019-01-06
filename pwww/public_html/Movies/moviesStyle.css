@@ -94,10 +94,10 @@ and open the template in the editor.
           }
 
           .endForth{
-            text-align: left;
+/*            text-align: left;*/
             display: inline-block;
-            width:350px;
-            padding: 5px;
+            width:30%;
+            padding: 10px;
           }
 
           #part2
@@ -220,11 +220,16 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
 /*            background-image: url("bback.jpg");*/
         }
                   button {
-              border-color: black;
+/*              border-color: black;
               border-style:inset;
               color:rgb(200,20,0);
               font-weight: bolder;
-              background-color:#282828;
+              background-color:#282828;*/
+background-color: #555555;
+                color:white;
+                border-radius: 5px;
+                padding: 6px 6px;
+                margin: 0px ;
                 }
 
   #form,#factor,#fregisor,#fmovie{
