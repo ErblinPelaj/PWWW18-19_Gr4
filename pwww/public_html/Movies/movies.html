@@ -68,6 +68,18 @@ function playPause() {
     myVideo.play();
   else
     myVideo.pause();
+   
+    if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    alert( "You have clicked the button " + localStorage.clickcount + " time(s).");
+     }
+     else {
+    alert("Sorry, your browser does not support web storage...");
+  }
 }
 
  </script>
@@ -125,11 +137,11 @@ function playPause() {
 
 <article class="forth">
 <form action="#" method="get" id="bestf" >
-    <p id="textForm"><label>Top rated movie</label>: <input  type="text" id="fmovie"> </p>
-    <p id="textForm"><label>The best regisor</label>: <input  type="text" id="fregisor"></p>
-   <p id="textForm"><label>The best actor</label>: <input type="text" id="factor"> </p>
+    <p id="textForm"><label>The best movie</label>: <input  type="text" id="fmovie"> </p>
+    <p id="textForm"><label>The best film director</label>: <input  type="text" id="fregisor"></p>
+   <p id="textForm"><label>The best actor/ess</label>: <input type="text" id="factor"> </p>
 
-  <button id="form" onclick="formValidation()" type="button">Suggest your choice</button>
+  <button id="form" onclick="formValidation()"  type="button">Suggest your choice</button>
          </form>
 
   </article>

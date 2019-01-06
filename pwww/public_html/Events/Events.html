@@ -151,6 +151,19 @@ Your browser does not support the audio element.
                                    myVideo1.play(); 
                                else 
                                    myVideo1.pause(); 
+                               
+                                if (typeof(Storage) !== "undefined") {
+                                if (sessionStorage.clickcount) {
+                                    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+                                    } 
+                                    else {
+                                         sessionStorage.clickcount = 1;
+                                          }
+                                       alert( "You have clicked the button " + sessionStorage.clickcount + " time(s).");
+                                          }
+                                     else {
+                                       alert("Sorry, your browser does not support web storage...");
+  }
                                                 } 
                </script>
                 <h2>Ben-Hur</h2>
