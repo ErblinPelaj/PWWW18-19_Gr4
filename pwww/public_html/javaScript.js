@@ -7,15 +7,31 @@
         var hour = now.getHours();
 
         if ( hour < 12 )
-        document.body.background = "b.jpg";
+        document.body.background = "bacck.jpg";
         if ( hour >= 12 )
         {
         hour = hour - 12;
         if ( hour < 6 )
-        document.body.background = "bacck.jpg";
+        document.body.background = "b.jpg";
         if ( hour >= 6 )
         document.body.background = "c.jpg";
         } 
+
+function timeformat(date) 
+{
+  var h = date.getHours();
+  var m = date.getMinutes();
+  var x = h >= 12 ? 'pm' : 'am';
+  h = h % 12;
+  h = h ? h : 12;
+  m = m < 10 ? '0'+m: m;
+  var mytime= h + ':' + m + ' ' + x;
+  return mytime;
+}
+
+var date = new Date();
+var ora = document.getElementById("hour");
+ora.innerHTML = "Ora eshte: "+ timeformat(date);
 
 
 var actors = [

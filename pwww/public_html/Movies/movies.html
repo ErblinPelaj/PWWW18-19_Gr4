@@ -276,9 +276,29 @@ function playPause() {
 
       </section>
             <section  class="endForth">
-     <button id="form" onclick="lokacioni()">Click here to show the location</button>
-     <p id="location"></p>
+     <button id="form" onclick="lokacioni()" >Click here to show the location</button>
+     <p id="location" ></p>
+     
 </section>
+            <p id="hours" style="float:right; width: 150px;"> </p>
+            <script>
+                function timeformat(date) 
+{
+  var h = date.getHours();
+  var m = date.getMinutes();
+  var x = h >= 12 ? 'pm' : 'am';
+  h = h % 12;
+  h = h ? h : 12;
+  m = m < 10 ? '0'+m: m;
+  var mytime= h + ':' + m + ' ' + x;
+  return mytime;
+}
+
+var date = new Date();
+var ora = document.getElementById("hours");
+ora.innerHTML = "Ora eshte: "+ timeformat(date);
+            </script>
+            
 
   <!-- Footer -->
         <div>
