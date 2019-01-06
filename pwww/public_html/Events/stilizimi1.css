@@ -118,6 +118,7 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
           audio{
              width:250px;
              height:40px;
+             padding:5px;
           }
       
           #buttonFilm1{
