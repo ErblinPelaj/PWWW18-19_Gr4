@@ -9,7 +9,7 @@
 <script src="jquery-3.3.1.min.js"></script>
 <script src="newjavascript.js">  </script>   
 <style>
-    #tabela,#button,#button1{
+    #button,#button1{
          
             
           -ms-transform: translate(20px,-167px); /* IE 9 */
@@ -17,6 +17,12 @@
           -moz-transform:translate(20px,-167px);/* Firefox */
           -o-transform:translate(20px,-167px);;/* Opera */
           transform: translate(20px,-167px); /* Standard syntax */
+          }  
+          
+          #button, #button1{
+              position: relative;
+/*              top:10%;*/
+              left:120%;
           }    
 </style>
  <script>
@@ -172,7 +178,7 @@ Your browser does not support the audio element.
             
           
         </article>
-          <article  class="forth">
+          <article  class="forth" style="padding-left:40px;">
               <table id="tabela" border="1" cellspacing="2">
                   <tr>
                       <th>Actor/Oscar</th>
@@ -214,6 +220,11 @@ Your browser does not support the audio element.
                   </tr>
               </table>
               <br>
+              <div style="font-family: Monotype Corsiva; width: 500px; font-size: 20px; ">
+                  <p id="demo" style="color:darkred;"></p>
+                <p id="demo1" style="color:darkred;"></p>
+                <p id="demo2" style="color:darkred;"></p>
+               </div> 
               <footer style="float:right;">
                     <button id="button">Animate</button>
                     <button id="button1">Fade</button>
@@ -250,6 +261,6 @@ Your browser does not support the audio element.
   </footer>
         </div>
     
-
+<script src="newjavascript.js">  </script> 
 </body>
 </html>
