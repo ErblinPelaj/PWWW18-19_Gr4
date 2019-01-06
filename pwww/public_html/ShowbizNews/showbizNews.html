@@ -3,29 +3,27 @@
     <head>
         <title>SHOWBIZ & NEWS</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <script src="jquery-3.3.1.min.js"></script>
          <script src="newjavascript.js"></script>
         <style>
+           
             #div1, #div2 {
-  float: left;
-  width: 100px;
-  height: 35px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid black;
-}
-            body{
-                margin:0px;
-             
+              float: right;
+              width: 100px;
+              height: 70px;
+              margin: 10px;
+              border: 1px solid black;
+                         }
+            body{ 
+                margin:0%;
                 background-color:#232323;
-            }
-          #header{
+                }
+          
+           #header{
               background-color: rgb(50,50,50);
               border-bottom: thin solid black;
               height:120px;
-
-          }
+                  }
           button {
               border-color: black;
               border-style:inset;
@@ -224,18 +222,18 @@ body{
 
 @keyframes rotating {
   from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   to {
-    -ms-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -ms-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }       
  .part5{
@@ -500,13 +498,7 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 </script>
-          <article id="pjesaFundit">
-    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="logo.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
-</div>
 
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-          </article>
         <article id='pjesaFundit' >
           <h2 style='color:#D32F2F; font-family: "Comic Sans MS",monospace;'>Contact us</h2>
 
@@ -521,10 +513,15 @@ function drop(ev) {
                 <input id="form" type="submit" value="Submit"><br>
                 
                 </form>
-
-
       </article>
-    
+      <article id="pjesaFundit">
+         <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+         <img src="logo.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="70">
+         </div>
+
+         <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </article>
+
      
     </div>
  <div>
@@ -533,73 +530,5 @@ function drop(ev) {
     <p >Template by OS Templates</p>
   </footer>
 </div>
-<!--        <section id="pjesa4">
-      <section class="endForth" >
-          <h2>About us</h2>
-          <img src="vesa.jpg" width="215" height="90" alt="">
-          <p>Lorem ipsum dolor sit amet consecture adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim as ninim veniam, quis nostrud exerci
-                  tation ullamcorper suscipit lobortis nisl ut aliquip</p>
-           <footer class="more2"><a href="#">Read More &raquo;</a></footer>
-      </section>
-
-      <section class="endForth">
-          <h2>Quick links</h2>
-          <nav>
-          <ul>
-            <li><a href="#">Lorem ipsum dolor sit</a></li>
-            <li><a href="#">Amet consectetur</a></li>
-            <li><a href="#">Praesent vel sem id</a></li>
-            <li><a href="#">Curabitur hendrerit est</a></li>
-            <li><a href="#">Aliquam reger erat</a></li>
-            <li><a href="#">Lorem ipsum dolor sit</a></li>
-            <li><a href="#">Amet consectetur</a></li>
-            <li><a href="#">Praesent vel sem id</a></li>
-            <li><a href="#">Curabitur hendrerit est</a></li>
-            <li><a href="#">Aliquam reger erat</a></li>
-          </ul>
-        </nav>
-      </section>
-
-      <section class="endForth">
-          <h2>Latest Blog posts</h2>
-           <article>
-
-            <h3>Post Title</h3>
-            <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
-
-          <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
-          <footer class="more2"><a href="#">Read More &raquo;</a></footer>
-        </article>
-           <article>
-
-            <h3>Post Title</h3>
-            <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
-
-          <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
-          <footer class="more2"><a href="#">Read More &raquo;</a></footer>
-        </article>
-      </section>
-
-      <section class="endForth">
-          <h2>Contact us</h2>
-           <article>
-              
-
-        </article>
-
-      </section>
-
-
-   Footer 
-        <div>
-  <footer >
-    <p>Copyright &copy; 2018 Domain Name -All Rights Reserved</p>
-    <p >Template by OS Templates</p>
-  </footer>
-</div>
-
-
-
-        </section>-->
 </body>
 </html>

@@ -7,7 +7,16 @@
 <link rel="stylesheet" href="stilizimi.css">
 <link rel="stylesheet" href="stilizimi1.css">
 <script src="jquery-3.3.1.min.js"></script>
-<script src="newjavascript.js">  </script>    
+<script src="newjavascript.js">  </script>   
+<style>
+    #tabela,#button,#button1{
+         
+            
+          -ms-transform: translate(20px,-167px); /* IE 9 */
+         -webkit-transform: translate(20px,-167px); /* Safari */
+          transform: translate(20px,-167px); /* Standard syntax */
+          }    
+</style>
  <script>
               $(function(){
                   $("#button").click(function(){
@@ -148,9 +157,8 @@ Your browser does not support the audio element.
             
           
         </article>
-          <article style="position:static"  class="forth" >
-              <h4>Some most winning actors,actresses,movies and TV show.</h4>
-              <table border="1" cellspacing="2">
+          <article  class="forth">
+              <table id="tabela" border="1" cellspacing="2">
                   <tr>
                       <th>Actor/Oscar</th>
                       <th>Actress/Oscar</th>
