@@ -248,3 +248,13 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
                 left:80%;
                 width:150px;
             }
+           .third{
+              margin: 0px 0px 0px 0px;
+              width:30%;
+
+              text-align: center;
+              display: inline-block;
+              padding: 8px;
+              color:red;
+              font-family: "Courier New", monospace;
+          }  
