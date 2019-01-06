@@ -89,7 +89,11 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
             text-align: center;
             width: 100%;
         }
-               
+        #lp1 li:hover{
+             background-color: #D32F2F;
+             outline-color: #D32F2F;
+             border-radius: 20px;           
+          }
              .third{
               margin: 0px 0px 0px 0px;
               width:25%;

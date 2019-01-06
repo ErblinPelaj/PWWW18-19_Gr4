@@ -58,7 +58,7 @@ body{
                 top: 20px;
                 right: 10px;
                 padding:25px 10px 30px 100px;
-                font-weight: bold;
+                font-weight: bold;               
           }
 
            
@@ -76,6 +76,7 @@ body{
           #lp1 a{
               text-decoration: none;
               color:dimgray;
+              border-radius: 10px;
           }
           
           #lp1 li:hover{
