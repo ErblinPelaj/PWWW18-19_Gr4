@@ -41,8 +41,9 @@ footer p {
       #pjesa3,#pjesa4{
          background-color: rgb(40, 0, 0);
          margin:0px 0px 0px 0px;
-         border-bottom: 3px;
-         border-bottom-style:inset ;
+/*         border-bottom: 3px;
+         border-bottom-style:inset ;*/
+         border-bottom:1px solid black;
          background-image: radial-gradient(closest-corner, darkgray 5%, gray 80%, lightgray 95%);
          height:600px;   
                      }
