@@ -527,16 +527,28 @@ function drop(ev) {
                 </form>
       </article>
       <article id="pjesaFundit">
+           <script> 
+              var i = 0;
+
+function timedCount() {
+  i = i + 1;
+  postMessage(i);
+  setTimeout("timedCount()",500);
+}
+
+timedCount();
+          </script>
           <p>Count numbers: <output id="result"></output><br>
           <button  onclick="startWorker()">Start</button>
           <button  onclick="stopWorker()">Stop</button>
+          
           </p>
           <script>
               var w;
               function startWorker(){
                   if(typeOf(Worker)!== "undefined"){
                       if(typeOf(w) === "undefined"){
-                      w= new Worker(worker_demo.js);
+                      w= new Worker(worker.js);
                   }
                   w.onmessage =function(event) {
                       document.getElementById("result").innerHTML = event.data;
@@ -551,6 +563,7 @@ function drop(ev) {
                   w = undefined;
               }
           </script>
+         
          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
          <img src="logo.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="70">
          </div>

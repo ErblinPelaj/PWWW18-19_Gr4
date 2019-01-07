@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-
 var i = 0;
 
 function timedCount() {
