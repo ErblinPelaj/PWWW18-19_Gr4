@@ -236,30 +236,37 @@ function playPause() {
      </article>
         </div>
 
-        <div class="part5">
+        <div class="part5" style="border-top:1px solid black;">
       <section class="endForth" >
-          <h2 id="demo">About us <small><button onclick="replaceFunc()">Replace</button></small></h2>
-          
-          <img src="vesa.jpg" width="215" height="90" alt="">
-          <p>Lorem ipsum dolor sit amet consecture adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim as ninim veniam, quis nostrud exerci
-                  tation ullamcorper suscipit lobortis nisl ut aliquip</p>
-           <footer class="more2"><a href="#">Read More &raquo;</a></footer>
-           <script>      
+
+          <h2 style="color:#D32F2F;">About us <small><button onclick="replaceFunc()">Replace</button></small></h2>
+          <img src="index.jpg" width="215" height="130" alt="print screen of our website">
+            <script>      
            function replaceFunc() {
   var str = document.getElementById("demo").innerHTML; 
   var res = str.replace("us", "KinoTv");
   document.getElementById("demo").innerHTML = res;
 }
       </script>
+          <h2 style="color:#D32F2F;">Contact Us</h2>
+<form action="http://www.randyconnolly.com/tests/process.php" method="get">
+    <input id="form" ondragover="">
+<a id="form" href="mailto:someone@example.com">Send email</a>
+</form>
+
       </section>
 
-
-
-
-                      <section class="endForth">
-          <h2  style="color:#D32F2F;">Categories</h2>
-           <article>
-               <form name="selectForm">
+            <section class="endForth">
+             <p id="hours"></p>
+            <svg height="50" width="500">
+        <ellipse cx="200" cy="20" rx="190" ry="20" style="fill:darkred;" />
+         <ellipse cx="180" cy="20" rx="170" ry="10" style="fill:white;" /> 
+        </svg>
+        </section>
+            
+            <section class="endForth" style="float:right;">
+                 <h2  style="color:#D32F2F;">Categories</h2>
+                      <form name="selectForm">
   <p>
       <label >Choose some categories, then click the button below:</label><br><br>
     <select id="movieType" name="movieType" multiple="multiple">
@@ -275,14 +282,15 @@ function playPause() {
 </form>
 
 <script>
-function howMany(selectObject) {
-  var numSelected = 0;
-  for (var i = 0; i < selectObject.options.length; i++) {
-    if (selectObject.options[i].selected) {
-      numSelected++;
+function howMany(objekti) {
+  var numriSelekt = 0;
+  
+  for (var i = 0; i < objekti.options.length; i++) {
+    if (objekti.options[i].selected) {
+      numriSelekt++;
     }
   }
-  return numSelected;
+  return numriSelekt;
 }
 
 var btn = document.getElementById('btn');
@@ -290,23 +298,12 @@ btn.addEventListener('click', function() {
   alert('Number of options selected: ' + howMany(document.selectForm.movieType));
 });
 </script>
-<h2 style="color:#D32F2F;">Contact Us</h2>
-<form action="http://www.randyconnolly.com/tests/process.php" method="get">
-    <input id="form" ondragover="">
-<a id="form" href="mailto:someone@example.com">Send email</a>
-</form>
-        </article>
-
-      </section>
-            
-            <section class="endForth">
-                
                 <p id="nom1"></p>         
      <button id="form" onclick="lokacioni()" >Click here to show the location</button>
      <p id="location"></p>
      
 </section>
-            <p id="hours" style="float:right; width: 150px;"> </p>
+            
             <script>
                 function timeformat(date) 
 {
@@ -322,18 +319,20 @@ btn.addEventListener('click', function() {
 
 var date = new Date();
 var ora = document.getElementById("hours");
-ora.innerHTML = "Ora eshte: "+ timeformat(date);
+ora.innerHTML = "The time: "+ timeformat(date);
             
             </script>
             
 
   <!-- Footer -->
-        <div>
+        
   <footer >
+      
     <p>Copyright &copy; 2018 Domain Name -All Rights Reserved</p>
     <p >Template by OS Templates</p>
+    
   </footer>
-</div>
+
 
         </div>
        <script src="newjavascript.js">  </script>

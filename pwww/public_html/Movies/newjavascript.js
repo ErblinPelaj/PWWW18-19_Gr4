@@ -1,3 +1,6 @@
+
+
+
 /* 
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,7 +22,7 @@
 
 var date = new Date();
 var ora = document.getElementById("hours");
-ora.innerHTML = "Ora eshte: "+ timeformat(date);
+ora.innerHTML = "The time: "+ timeformat(date);
 
 let actors = [
   "Jennifer Lawrence",

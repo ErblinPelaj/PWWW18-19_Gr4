@@ -184,37 +184,31 @@ and open the template in the editor.
                   font-family: "Courier New", monospace;
               }
               
-             #movetxt,#movetxt1,#movetxt2{
-color:black;
-padding:5px;
-font-weight:bold;
-font-family: Colonna MT,Comic Sans MS,monospace;
-margin:0px;
-font-size:25px;
-}
 
-#movetxt {
-    position: relative;
-    -webkit-animation: moving 5s infinite;
-    animation: moving 5s infinite ;
+.pulsate
+{
+    -webkit-animation: puls 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+    font-size: 25px;
+    position:absolute;
+    top:30%;
+    left:5%;
+    width: 40%;
+    color:black;
+    font-family: Monotype Corsiva;
 }
-
-#movetxt1 {
-    position: relative;
-    -webkit-animation: moving 5s infinite;
-    animation: moving 7s infinite ;
+@-webkit-keyframes puls {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.2;
+    }
 }
-#movetxt2 {
-    position: relative;
-    -webkit-animation: moving 5s infinite;
-    animation: moving 9s infinite;
-}
-
-
-@keyframes moving {
-    from {left: 0px;}
-    to {left: 200px;}
-} 
 
 body{
     margin:0px;
@@ -258,3 +252,26 @@ background-image: linear-gradient(to bottom, whitesmoke, gray);
             text-align: center;
             width: 100%;
         }
+        
+        #button{
+             background-color: #555555;
+                color:white;
+                border-radius: 5px;
+                padding: 6px 6px;
+                margin: 0px ;
+                position: absolute;
+                top:76%;
+                left:2%;
+
+            }
+            #button1{
+              background-color: #555555;
+                color:white;
+                border-radius: 5px;
+                padding: 6px 6px;
+                margin: 0px ;
+                position: absolute;
+                top:72%;
+                left:2%;  
+            }    
+          
