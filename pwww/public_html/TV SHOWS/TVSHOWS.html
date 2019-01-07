@@ -5,6 +5,24 @@
         <title>TV SHOWS</title>
         <meta charset="UTF-8">
          <link rel = "stylesheet" type = "text/css" href = "tvshowStyle.css" />
+         <style>
+             .backgroundNdryshim 
+             {
+            animation: ndryshimi 5s ease-out;
+            animation-iteration-count: 1;
+            
+            padding: 5px;
+            text-align: center;
+            border-radius: 50px;
+            background: #232323;
+        }
+        
+        @-webkit-keyframes ndryshimi {
+    0% {background-color: #232323; opacity: 0.2;}
+    50% {background-color:black; opacity: 0.75; }
+    100% {background-color: #232323; opacity: 0.2;}
+}
+         </style>
     </head>
     <body>
          <!-- / Header i faqes -->
@@ -36,7 +54,7 @@
 
        </div>
 
-       <article id="figcap">
+       <article  class="backgroundNdryshim" id="figcap">
           <h2>BEST 2018 TV SHOWS</h2>
           <p>With so many TV shows airing in 2018, figuring out what's
               worth watching next has never been more of a challenge. That's where our running list of the year's best television series comes in</p>
