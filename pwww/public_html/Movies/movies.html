@@ -251,22 +251,37 @@ function playPause() {
                       <section class="endForth">
           <h2  style="color:#D32F2F;">Categories</h2>
            <article>
-               <form action="http://www.randyconnolly.com/tests/process.php" method="get">
-
-<input id="form" list="movies" name="movies">
-<datalist id="movies">
-  <option value="Action">
-  <option value="Comedy">
-  <option value="Horror">
-  <option value="Romance">
-  <option value="Sci-fi">
-  <option value="Thriller">
-  <option value="Drame">
-</datalist>
-<input id="form" type="submit">
-
-
+               <form name="selectForm">
+  <p>
+      <label >Choose some categories, then click the button below:</label><br><br>
+    <select id="movieType" name="movieType" multiple="multiple">
+      <option selected="selected">Action</option>
+      <option>Comedy</option>
+      <option>Sci-fi</option>
+      <option>Romance</option>
+      <option>Drama</option>
+      <option>Horror</option>
+    </select>
+  </p>
+  <p><input id="btn" type="button" value="How many are selected?" /></p>
 </form>
+
+<script>
+function howMany(selectObject) {
+  var numSelected = 0;
+  for (var i = 0; i < selectObject.options.length; i++) {
+    if (selectObject.options[i].selected) {
+      numSelected++;
+    }
+  }
+  return numSelected;
+}
+
+var btn = document.getElementById('btn');
+btn.addEventListener('click', function() {
+  alert('Number of options selected: ' + howMany(document.selectForm.movieType));
+});
+</script>
 <h2 style="color:#D32F2F;">Contact Us</h2>
 <form action="http://www.randyconnolly.com/tests/process.php" method="get">
     <input id="form" ondragover="">
@@ -277,6 +292,8 @@ function playPause() {
       </section>
             
             <section class="endForth">
+                
+                <p id="nom1"></p>         
      <button id="form" onclick="lokacioni()" >Click here to show the location</button>
      <p id="location"></p>
      
@@ -298,6 +315,7 @@ function playPause() {
 var date = new Date();
 var ora = document.getElementById("hours");
 ora.innerHTML = "Ora eshte: "+ timeformat(date);
+            
             </script>
             
 
