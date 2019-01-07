@@ -308,10 +308,10 @@ function drop(ev) {
       </article>
 
       <article id="pjesaFundit">
-          <p id="demo">Count numbers: <output id="result"></output><br>
+          <p >Count numbers: <output id="result"></output><br>
           <button  onclick="startWorker()">Start</button>
           <button  onclick="stopWorker()">Stop</button>
-          <button onclick="replaceFunc()">Replace</button>
+          
           </p>
           <script>
               var w;
@@ -333,11 +333,7 @@ function drop(ev) {
                   w = undefined;
               }
               
-              function replaceFunc() {
-  var str = document.getElementById("demo").innerHTML; 
-  var res = str.replace("Count numbers", "Counter");
-  document.getElementById("demo").innerHTML = res;
-}
+
           </script>
          
          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">

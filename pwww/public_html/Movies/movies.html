@@ -155,7 +155,7 @@ function playPause() {
                 <h2>Avengers: End Game</h2>
                 <figure>
                     <img src="av.jpg" width="200" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">LEARN MORE &raquo;</a></footer>
+                    <footer class="more" id="footer"><a href="https://en.wikipedia.org/wiki/Avengers:_Endgame" style="text-decoration: underline;">LEARN MORE &raquo;</a></footer>
                 </figure>
             </article>
 
@@ -163,7 +163,7 @@ function playPause() {
                 <h2>Godzilla 2</h2>
                 <figure>
                     <img src="go.jpg" width="200" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">LEARN MORE &raquo;</a></footer>
+                    <footer class="more" id="footer"><a href="https://en.wikipedia.org/wiki/Godzilla:_King_of_the_Monsters_(2019_film)" style="text-decoration: underline;">LEARN MORE &raquo;</a></footer>
                 </figure>
             </article>
 
@@ -171,7 +171,7 @@ function playPause() {
                 <h2>Glass</h2>
                 <figure>
                     <img src="gl.jpg" width="200" height="300" alt="there's no photo">
-                    <footer class="more" id="footer"><a href="#" style="text-decoration: underline;">LEARN MORE &raquo;</a></footer>
+                    <footer class="more" id="footer"><a href="https://www.rottentomatoes.com/m/glass_2019" style="text-decoration: underline;">LEARN MORE &raquo;</a></footer>
                 </figure>
             </article>
 
@@ -238,13 +238,22 @@ function playPause() {
 
         <div class="part5" style="border-top:1px solid black;">
       <section class="endForth" >
-          <h2 style="color:#D32F2F;">About us</h2>
+
+          <h2 style="color:#D32F2F;">About us <small><button onclick="replaceFunc()">Replace</button></small></h2>
           <img src="index.jpg" width="215" height="130" alt="print screen of our website">
+            <script>      
+           function replaceFunc() {
+  var str = document.getElementById("demo").innerHTML; 
+  var res = str.replace("us", "KinoTv");
+  document.getElementById("demo").innerHTML = res;
+}
+      </script>
           <h2 style="color:#D32F2F;">Contact Us</h2>
 <form action="http://www.randyconnolly.com/tests/process.php" method="get">
     <input id="form" ondragover="">
 <a id="form" href="mailto:someone@example.com">Send email</a>
 </form>
+
       </section>
 
             <section class="endForth">

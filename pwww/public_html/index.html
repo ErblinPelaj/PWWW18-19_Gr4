@@ -156,11 +156,20 @@
          
       <section id="pjesa4">     
       <article class="forth1" >
-          <h2>About us</h2>
+          <h2>About us<small><button id="button" onclick="matchFunc()">Match</button></small></h2>
           <img src="img/index.jpg" width="215" height="130" alt="">
           <p>This page is created for helping people choose what to watch and also for those who are interested in showbiz,special events etc.The main focus of the website KinoTV.com is the Latest and the Trending Cinema,
-mostly about high quality and not so much about the actual blockbusters.</p>
+              mostly about high quality and not so much about the actual blockbusters. </p>
+          <p id="demo"></p>
            <footer class="more2"><a href="#">Read More &raquo;</a></footer>
+          
+ <script>
+function matchFunc() {
+  var str = "About us"; 
+  var res = str.match(/u/g);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
       </article>
       
       <article class="forth1">
@@ -176,7 +185,7 @@ mostly about high quality and not so much about the actual blockbusters.</p>
             <li><a href="ShowbizNews/showbizNews.html#clb">Celebrity news</a></li>
             <li><a href="Events/events.html#soon">Golden Globe nominations</a></li>
             <li><a href="Events/events.html#winners">Award winners</a></li>
-            
+
           </ul>
         </nav>
       </article>
