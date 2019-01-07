@@ -238,11 +238,19 @@ function playPause() {
 
         <div class="part5">
       <section class="endForth" >
-          <h2>About us</h2>
+          <h2 id="demo">About us <small><button onclick="replaceFunc()">Replace</button></small></h2>
+          
           <img src="vesa.jpg" width="215" height="90" alt="">
           <p>Lorem ipsum dolor sit amet consecture adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volupat. Ut wisi enim as ninim veniam, quis nostrud exerci
                   tation ullamcorper suscipit lobortis nisl ut aliquip</p>
            <footer class="more2"><a href="#">Read More &raquo;</a></footer>
+           <script>      
+           function replaceFunc() {
+  var str = document.getElementById("demo").innerHTML; 
+  var res = str.replace("us", "KinoTv");
+  document.getElementById("demo").innerHTML = res;
+}
+      </script>
       </section>
 
 
