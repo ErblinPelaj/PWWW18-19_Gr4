@@ -158,5 +158,21 @@ body{
               color:dimgray;
           }
          
-          
+         #form,#emri,#email,#subjekti{
+                background-color: #232323;
+                color:white;
+                border-radius: 5px;
+                padding: 6px 6px;
+                margin: 0px ;
+
+            }
+            
+                #button{
+                padding: 3px;
+           color: white;
+          font-family: monospace;
+           background-color: rgb(200,20,0);
+           font-size: 15px;
+           border-radius: 8px;
+            } 
 
