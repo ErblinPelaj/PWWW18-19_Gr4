@@ -7,14 +7,14 @@
         var hour = now.getHours();
 
         if ( hour < 12 )
-        document.body.background = "bacck.jpg";
+        document.body.background = "img/bacck.jpg";
         if ( hour >= 12 )
         {
         hour = hour - 12;
         if ( hour < 6 )
-        document.body.background = "b.jpg";
+        document.body.background = "img/b.jpg";
         if ( hour >= 6 )
-        document.body.background = "c.jpg";
+        document.body.background = "img/c.jpg";
         } 
 
 function timeformat(date) 
