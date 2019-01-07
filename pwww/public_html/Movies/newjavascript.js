@@ -24,34 +24,6 @@ var date = new Date();
 var ora = document.getElementById("hours");
 ora.innerHTML = "The time: "+ timeformat(date);
 
-let actors = [
-  "Jennifer Lawrence",
-  "Johnny Depp",
-  "Angelina Jolie",
-   "Marlon Brando",
-  "Robert De Niro",
-  "Leonardo DiCaprio",
-   "Morgan Freeman",
-  "Brad Pitt",
-  "Tom Cruise"];
-  
-  
-  var itr=0;
- function nom()
- { 
-let nominnes = { first : actors[3], second : actors[4],  
-                      third : actors[5], fourth : actors[6]}; 
-
- for (itr in nominnes)  
-    { 
-        var nom = document.getElementById("nom1");
-nom.innerHTML = "Nominimet per ket vit jane "+ (nominnes[itr] + " , ");
-        
-    } 
- }
-
-
-let profesioni="actor";
 
 
 

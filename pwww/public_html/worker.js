@@ -1,10 +1,6 @@
 
-this.onmessage = e => {
-    const delay = e.data;
-
-    const start = performance.now();
-    while (performance.now() - start < delay);
-    const end = performance.now();
-
-    this.postMessage(end - start);
+onmessage = function(e){
+    if(e.data.addThis !== undefined){
+        this.postMessage({result: e.data.addThis.num1 + e.data.addThis.num2 });
+    }
 };
