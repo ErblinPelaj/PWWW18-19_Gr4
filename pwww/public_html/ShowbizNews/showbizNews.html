@@ -3,8 +3,11 @@
     <head>
         <title>SHOWBIZ & NEWS</title>
         <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "showbizStyle.css" />
+        <script src="jquery-3.3.1.min.js"></script>
+         <script src="worker.js"></script>        
           <script>
-            $(function() {
+            $(function(){
                 $("#button").click(function(){
                     $("#figcap").hide(1000,function(){
                         alert("Hidden article.To see it,click on the show button!");
@@ -12,17 +15,9 @@
                 });
                  $("#button1").click(function(){
                     $("#figcap").show(1000);
-                });
-    
+                }); 
 });
-
         </script>
-         <script src="jquery-3.3.1.min.js"></script>
-         <script src="newjavascript.js"></script>
-         <script src="worker.js"></script>
-         <link rel = "stylesheet" type = "text/css" href = "showbizStyle.css" />
-         
-            
 
     </head>
   <body>  
@@ -98,7 +93,7 @@
                   <tr>
                     <th>No.</th>
                     <th>Movie</th>
-                    <th>Fitimet</th>
+                    <th>Earnings</th>
                   </tr>
                   <tr>
                     <td>1</td>
@@ -186,7 +181,7 @@
                   <tr>
                     <th>Rank</th>
                     <th>Actor</th>
-                    <th>Fitimet</th>
+                    <th>Earnings</th>
                   </tr>
                   <tr>
                     <td>1</td>
@@ -266,8 +261,8 @@ function drop(ev) {
 
                <form action="http://www.randyconnolly.com/tests/process.php" id="form1">
                 <p> First name: <input id="form" type="text" name="fname"></p>
-                <p> Last name: <input id="form" type="text" name="lname" form="form1"></p>
-                <p>  Email: <input type="email" name="email"></p>
+                <p>  Last name: <input id="form" type="text" name="lname" form="form1"></p>
+                <p>      Email: <input type="email" name="email"></p>
                 <input id="form" type="radio" name="gender" value="male" checked> Male<br>
   <input id="form" type="radio" name="gender" value="female"> Female<br>
   <input id="form" type="radio" name="gender" value="other"> Other<br><br><br>
@@ -278,21 +273,10 @@ function drop(ev) {
       </article>
 
       <article id="pjesaFundit">
-           <script> 
-              var i = 0;
-
-function timedCount() {
-  i = i + 1;
-  postMessage(i);
-  setTimeout("timedCount()",500);
-}
-
-timedCount();
-          </script>
-          <p>Count numbers: <output id="result"></output><br>
+          <p id="demo">Count numbers: <output id="result"></output><br>
           <button  onclick="startWorker()">Start</button>
           <button  onclick="stopWorker()">Stop</button>
-          
+          <button onclick="replaceFunc()">Replace</button>
           </p>
           <script>
               var w;
@@ -313,6 +297,12 @@ timedCount();
                   w.terminate();
                   w = undefined;
               }
+              
+              function replaceFunc() {
+  var str = document.getElementById("demo").innerHTML; 
+  var res = str.replace("Count numbers", "Counter");
+  document.getElementById("demo").innerHTML = res;
+}
           </script>
          
          <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
