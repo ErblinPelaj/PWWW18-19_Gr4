@@ -5,6 +5,7 @@
  */
 
 
+
  function timeformat(date) 
 {
   var h = date.getHours();
@@ -36,19 +37,19 @@ let actors = [
   var itr=0;
  function nom()
  { 
-let nominnes = { first : actors[3], second : actors[4],  
+var nominnes = { first : actors[3], second : actors[4],  
                       third : actors[5], fourth : actors[6]}; 
 
  for (itr in nominnes)  
     { 
         var nom = document.getElementById("nom1");
-nom.innerHTML = "Nominimet per ket vit jane "+ (nominnes[itr] + " , ");
+nom.innerHTML = "Nominimet per ket vit jane ";
         
     } 
  }
 
 
-let profesioni="actor";
+
 
 
 
@@ -274,3 +275,4 @@ function showError(error) {
       break;
   }
 }
+

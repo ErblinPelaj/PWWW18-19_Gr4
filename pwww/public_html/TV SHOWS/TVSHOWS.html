@@ -5,6 +5,7 @@
         <title>TV SHOWS</title>
         <meta charset="UTF-8">
          <link rel = "stylesheet" type = "text/css" href = "tvshowStyle.css" />
+         <script src="tvshow.js">  </script>
          <style>
              .backgroundNdryshim 
              {
@@ -21,6 +22,15 @@
     0% {background-color: #232323; opacity: 0.2;}
     50% {background-color:black; opacity: 0.75; }
     100% {background-color: #232323; opacity: 0.2;}
+}
+
+#nominimet{
+    width:30%;
+    position:absolute;
+    top:45%;
+    left:65%;
+    background-color: #232323;
+    font-family: Monotype Corsiva;
 }
          </style>
     </head>
@@ -51,16 +61,50 @@
     <div id="a">
         <img class="bottom" src="top.jpg" alt="">
       <img class="top" src="best.png"  alt="">
-
        </div>
+ 
+ <article id="nominimet">
+     
+                 <h2>Nominnes</h2>
+                 
+                 <p id="demo"> </p>
+                 <h2>Nominnes</h2>
+                 
+                  <p id="demo"> </p>
+                  
+                 <h2>Nominnes</h2>
+                 <p id="demo"> </p>
+                 
+                </article>           
+               <script>
+var actors = [
+  "Jennifer Lawrence",
+  "Johnny Depp",
+  "Angelina Jolie",
+   "Marlon Brando",
+  "Robert De Niro",
+  "Leonardo DiCaprio",
+   "Morgan Freeman",
+  "Brad Pitt",
+  "Tom Cruise"];
+  
+var i = 5;
+var len = actors.length;
+var text = "";
+
+for (; i < len; i++) {
+  text += actors[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>    
+
 
        <article  class="backgroundNdryshim" id="figcap">
           <h2>BEST 2018 TV SHOWS</h2>
           <p>With so many TV shows airing in 2018, figuring out what's
               worth watching next has never been more of a challenge. That's where our running list of the year's best television series comes in</p>
-
        </article>
-
          </div>
 
          <div id='back'>
@@ -250,6 +294,7 @@ document.getElementById("gth").innerHTML = stars;
     <p>Copyright &copy; 2018 Domain Name -All Rights Reserved</p>
     <p >Template by OS Templates</p>
   </footer>
+          <script src="tvshow.js"> </script>
     </body>
-    
+   
 </html>

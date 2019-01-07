@@ -45,6 +45,36 @@ var actors = [
   "Brad Pitt",
   "Tom Cruise"];
   
+var i = 5;
+var len = actors.length;
+var text = "";
+
+for (; i < len; i++) {
+  text += actors[i] + "  ";
+}
+
+document.getElementById("a").innerHTML = text;
+
+var j = 0;
+var length = actors.length-4;
+var text = "";
+
+for (; j < length; j++) {
+  text += actors[j] + "  ";
+}
+
+document.getElementById("b").innerHTML = text;
+
+var k =actors.length-1;
+var min =5; 
+var text = "";
+
+for (; k >= min; k--) {
+  text += actors[k] + " , ";
+}
+
+document.getElementById("c").innerHTML = text;
+  
   
   
 var second = {
