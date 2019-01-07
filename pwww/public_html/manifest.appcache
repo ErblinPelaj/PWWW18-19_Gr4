@@ -1,4 +1,7 @@
 CACHE MANIFEST
+#Date-07.01.19
+text/cache-manifest .manifest
+CACHE:
 index.html
 Events.html
 movies.html
@@ -11,3 +14,9 @@ newjavascript.js
 moviesStyle.css
 showbizStyle.css
 tvshowStyle.css
+
+NETWORK:
+indes.html
+
+FALLBACK:
+index.html
