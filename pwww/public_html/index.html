@@ -157,7 +157,7 @@ myWorker.onmessage = function(e){
                   <br>  celebrity breaking news from the kinoTV</p>
               <footer class="more"><a href="ShowbizNews/showbizNews.html#clb">READ MORE &raquo;</a></footer>
         </article>
-        <p>Winners of 2018<p> 
+        <p style="color:#232323">Winners of 2018<p> 
         <ul>
             <li id="a"></li>
             <li id="b"></li>
@@ -228,14 +228,52 @@ function matchFunc() {
                       <article class="forth1" style='padding-left:2%;'>
           <h2>Contact us</h2>
            
-               <form method="get" action="http://www.randyconnolly.com/tests/process.php">
-                   <P> <input type="text" value="Name" id="emri"> </P>
-                   <P>  <input type="email" value="Email" autocomplete="off" id="email"> </P>
-                  <P> <input type="text" value="Subject" id="subjekti"></P>
-                  <P>  <textarea rows="4" cols="21" id="form">Message</textarea></P>
-                  <p id="submit"><input type="submit" value="Submit" id="button"></p>
-                   
-               </form>     
+          <form method="get" name="form1" action="http://www.randyconnolly.com/tests/process.php" id="mainForm" onclick="return formValidation4() ">
+                   <P> <input  id="emri" type="text" placeholder="Name" name="Name"> </P>
+                   <P>  <input  id="email" type="email" placeholder="Email" name="Email"> </P>
+                  <P> <input  id="subjekti" type="text" placeholder="Subject" name="Subject"></P>
+                  <P>  <textarea id="form" rows="4" cols="21">Message</textarea></P>
+                  <p id="submit"><input name="Submit" id="form" style="background-color: #D32F2F;" type="submit" value="SUBMIT"></p>
+
+               </form> 
+          <script>
+                     
+                     function formValidation4()                                    
+{ 
+    var name = document.forms["form1"]["Name"];               
+    var email = document.forms["form1"]["Email"];    
+    var sub = document.forms["form1"]["Subject"];  
+  
+    if (name.value === "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        return false; 
+    } 
+    if (email.value === "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        return false; 
+    } 
+    if (sub.value === "")                                  
+    { 
+        window.alert("Please enter a subject."); 
+        return false; 
+    } 
+    return true; 
+}
+                 </script>
       </article> 
          </section>
   <!-- Footer -->
