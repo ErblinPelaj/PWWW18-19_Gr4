@@ -4,6 +4,36 @@
         <title>SHOWBIZ & NEWS</title>
         <meta charset="UTF-8">
         <link rel = "stylesheet" type = "text/css" href = "showbizStyle.css" />
+        <style>
+            
+            body{
+                margin:0px;
+            }
+            .pulsate
+{
+    -webkit-animation: puls 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+    font-size: 25px;
+    position:absolute;
+    top:30%;
+    left:5%;
+    width: 60%;
+    color:black;
+    font-family: Monotype Corsiva;
+}
+@-webkit-keyframes puls {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+        </style>
         <script src="jquery-3.3.1.min.js"></script>
          <script src="worker.js"></script>        
           <script>
@@ -41,25 +71,29 @@
         <div class="mainpart" >
             
             <h1 style="text-shadow: 2px 2px 8px #FF0000; padding: 10px; margin: 0px;">News</h1>
-            <p id="movetxt" style="padding-top:20px;">* Oscars campaigning scandal sees Best Original Song nominee eliminated</p>
-<p id="movetxt1">* Shelved Dylan Thomas screenplay to air on BBC Radio 3</p>
-<p id="movetxt2">* George Clooney on Sandra Bullock: ‘Sandy drinks so much that</p>
- <p id="movetxt">* William Roache trial: Deirdre Barlow actor says he was a 'perfect</p>
-<p id="movetxt1">* Jennifer Lawrence loves The Only Way Is Essex: American Hustle star</p>
-<p id="movetxt2">‘* Lost’ Dylan Thomas play starring Richard Burton given first radio</p>
+            
+            <p class="pulsate">* Oscars campaigning scandal sees Best Original Song nominee eliminated<br>
+                * Shelved Dylan Thomas screenplay to air on BBC Radio 3<br>
+* George Clooney on Sandra Bullock: ‘Sandy drinks so much that<br>
+* William Roache trial: Deirdre Barlow actor says he was a 'perfect<br>
+* Jennifer Lawrence loves The Only Way Is Essex: American Hustle star<br>
+‘* Lost’ Dylan Thomas play starring Richard Burton given first radio</p>
             
           <article id="figcap">
               <h2 style="text-shadow: 2px 2px 8px #999999;">Latest News In Film Industry</h2>
              <p>Catch the latest news about your favorite movies or actors!</p>
-
           </article>
-<button id="button">Hide</button><br>
-<button id="button1">Show</button>
+            
 
+            <button id="button">Hide</button><br>
+<button id="button1">Show</button>
 <a href="https://www.dailymail.co.uk/tvshowbiz/index.html">
  <img id="movie" class="rrotullim" src="more.png" >
+ 
 </a>
+
         </div>
+       
 
         <section id="part1">
             <a name="mn"><h1 style="text-shadow: 2px 2px 8px #FF0000;">Movie News</h1></a>
@@ -226,9 +260,9 @@
                   <tr>
                     <td>9</td>
                     <td>Adam Sandler</td>
-                    <td>$39M</td>
                   </tr>
-                  <tr>
+                  <tr>                    <td>$39M</td>
+
                     <td>10</td>
                     <td>Angelina Jolie</td>
                     <td>$28M</td>
@@ -241,7 +275,8 @@
 
 <div class="part5">
             <script>
-function allowDrop(ev) {
+function allowDrop(ev)
+{
   ev.preventDefault();
 }
 

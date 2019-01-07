@@ -31,7 +31,7 @@ function timeformat(date)
 
 var date = new Date();
 var ora = document.getElementById("hour");
-ora.innerHTML = "Ora eshte: "+ timeformat(date);
+ora.innerHTML = "The time: "+ timeformat(date);
 
 
 var actors = [
